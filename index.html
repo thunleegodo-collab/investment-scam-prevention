@@ -47,6 +47,11 @@
       padding: .25rem .75rem; border-radius: 999px; font-weight: 600;
     }
     .nav-links a.news-link:hover { background: var(--red-dark); }
+    .nav-links a.consult-link {
+      background: #276749; color: #fff;
+      padding: .25rem .75rem; border-radius: 999px; font-weight: 600;
+    }
+    .nav-links a.consult-link:hover { background: #1c4532; color: #fff; }
 
     /* ========= HERO ========= */
     #hero {
@@ -381,6 +386,10 @@
       color: #fff; background: #2b6cb0;
     }
     .nav-drawer a.checker-link:hover { background: #1a4f8a; }
+    .nav-drawer a.consult-link {
+      color: #fff; background: #276749;
+    }
+    .nav-drawer a.consult-link:hover { background: #1c4532; }
 
     @media (max-width: 640px) {
       .hamburger { display: flex; align-items: center; }
@@ -402,6 +411,7 @@
     <li><a href="#resources">相談窓口</a></li>
     <li><a href="checker.html">🔍 業者チェック</a></li>
     <li><a href="news.html" class="news-link">📰 ニュース</a></li>
+    <li><a href="consultation.html" class="consult-link">💬 有料相談</a></li>
   </ul>
 </nav>
 
@@ -413,6 +423,7 @@
   <a href="#resources">📞 相談窓口</a>
   <a href="checker.html" class="checker-link">🔍 業者チェック</a>
   <a href="news.html" class="news-link">📰 ニュース</a>
+  <a href="consultation.html" class="consult-link">💬 有料個別相談</a>
 </nav>
 
 <!-- ティッカー -->
@@ -677,6 +688,20 @@
         <span class="link">0120-64-5005</span>
       </div>
     </div>
+  </div>
+</section>
+
+<!-- 有料相談バナー -->
+<section style="background:#f0fff4; padding:3rem 2rem; border-top:1px solid #c6f6d5; border-bottom:1px solid #c6f6d5;">
+  <div style="max-width:860px; margin:0 auto; display:flex; align-items:center; justify-content:space-between; gap:2rem; flex-wrap:wrap;">
+    <div style="flex:1; min-width:220px;">
+      <div style="font-size:.75rem; font-weight:700; letter-spacing:.1em; color:#276749; background:rgba(39,103,73,.1); display:inline-block; padding:.2rem .7rem; border-radius:999px; margin-bottom:.75rem;">PAID CONSULTATION</div>
+      <h2 style="font-size:clamp(1.2rem,2.5vw,1.6rem); font-weight:800; color:#1c4532; margin-bottom:.5rem;">💬 専門家への有料個別相談</h2>
+      <p style="font-size:.9rem; color:#276749; margin-bottom:0;">「この業者は大丈夫？」「この利回りは怪しい？」どんな悩みもまず相談を。<br><strong>30分 ¥10,000（税込）</strong>・Zoom または 電話</p>
+    </div>
+    <a href="consultation.html" style="display:inline-flex; align-items:center; gap:.5rem; background:#276749; color:#fff; padding:.9rem 2.2rem; border-radius:10px; font-size:1rem; font-weight:800; text-decoration:none; white-space:nowrap; box-shadow:0 4px 16px rgba(39,103,73,.35); transition:background .2s, transform .15s;" onmouseover="this.style.background='#1c4532';this.style.transform='translateY(-2px)'" onmouseout="this.style.background='#276749';this.style.transform='translateY(0)'">
+      今すぐ予約する →
+    </a>
   </div>
 </section>
 

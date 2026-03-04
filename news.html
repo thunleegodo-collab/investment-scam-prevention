@@ -40,6 +40,11 @@
     .nav-links { display: flex; gap: 1.5rem; list-style: none; }
     .nav-links a { color: #cbd5e0; text-decoration: none; font-size: .9rem; transition: color .2s; }
     .nav-links a:hover, .nav-links a.active { color: #fff; }
+    .nav-links a.consult-link {
+      background: #276749; color: #fff;
+      padding: .25rem .75rem; border-radius: 999px; font-weight: 600;
+    }
+    .nav-links a.consult-link:hover { background: #1c4532; color: #fff; }
 
     /* ===== PAGE HEADER ===== */
     .page-header {
@@ -271,6 +276,10 @@
       color: #fff; background: #2b6cb0;
     }
     .nav-drawer a.checker-link:hover { background: #1a4f8a; }
+    .nav-drawer a.consult-link {
+      color: #fff; background: #276749;
+    }
+    .nav-drawer a.consult-link:hover { background: #1c4532; }
 
     @media (max-width: 768px) {
       .hamburger { display: flex; align-items: center; }
@@ -291,6 +300,7 @@
     <li><a href="index.html#steps">被害にあったら</a></li>
     <li><a href="checker.html">🔍 業者チェック</a></li>
     <li><a href="news.html" class="active">ニュース</a></li>
+    <li><a href="consultation.html" class="consult-link">💬 有料相談</a></li>
   </ul>
 </nav>
 
@@ -300,6 +310,7 @@
   <a href="index.html#checklist">✔ チェックリスト</a>
   <a href="checker.html" class="checker-link">🔍 業者チェック</a>
   <a href="news.html" class="active news-link">📰 ニュース</a>
+  <a href="consultation.html" class="consult-link">💬 有料個別相談</a>
 </nav>
 
 <!-- ページヘッダー -->

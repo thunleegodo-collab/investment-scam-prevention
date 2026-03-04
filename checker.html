@@ -46,6 +46,11 @@
       background: var(--red); color: #fff;
       padding: .25rem .75rem; border-radius: 999px; font-weight: 600;
     }
+    .nav-links a.consult-link {
+      background: #276749; color: #fff;
+      padding: .25rem .75rem; border-radius: 999px; font-weight: 600;
+    }
+    .nav-links a.consult-link:hover { background: #1c4532; color: #fff; }
 
     /* ===== HERO ===== */
     .page-header {
@@ -314,6 +319,10 @@
       color: #fff; background: #2b6cb0;
     }
     .nav-drawer a.checker-link:hover { background: #1a4f8a; }
+    .nav-drawer a.consult-link {
+      color: #fff; background: #276749;
+    }
+    .nav-drawer a.consult-link:hover { background: #1c4532; }
 
     @media (max-width: 480px) {
       .hamburger { display: flex; align-items: center; }
@@ -333,6 +342,7 @@
     <li><a href="index.html#checklist">チェックリスト</a></li>
     <li><a href="checker.html" class="active">業者チェック</a></li>
     <li><a href="news.html" class="news-link">📰 ニュース</a></li>
+    <li><a href="consultation.html" class="consult-link">💬 有料相談</a></li>
   </ul>
 </nav>
 
@@ -342,6 +352,7 @@
   <a href="index.html#checklist">✔ チェックリスト</a>
   <a href="checker.html" class="active checker-link">🔍 業者チェック</a>
   <a href="news.html" class="news-link">📰 ニュース</a>
+  <a href="consultation.html" class="consult-link">💬 有料個別相談</a>
 </nav>
 
 <!-- ページヘッダー -->
@@ -501,25 +512,52 @@ function searchDB(name, address) {
 
   if (!normName) return { matched: [], partial: [] };
 
-  const matched  = [];
-  const partial  = [];
+  // スコア付きで候補を収集
+  // nameScore: 3=完全一致, 2=DB名が検索語を含む, 1=検索語がDB名を含む(3文字以上のみ)
+  const scored = [];
 
   for (const entry of DB) {
-    const nameHit =
-      entry.name_n.includes(normName) || normName.includes(entry.name_n);
-    if (!nameHit) continue;
-
-    if (normAddr && normAddr.length >= 3) {
-      const addrHit =
-        entry.addr_n.includes(normAddr) || normAddr.includes(entry.addr_n);
-      if (addrHit) matched.push(entry);
-      else partial.push(entry);
-    } else {
-      matched.push(entry);
+    let nameScore = 0;
+    if (entry.name_n === normName) {
+      nameScore = 3;
+    } else if (entry.name_n.includes(normName)) {
+      nameScore = 2;
+    } else if (entry.name_n.length >= 3 && normName.includes(entry.name_n)) {
+      // 逆包含は DB名が3文字以上の場合のみ（空文字・超短文字による誤マッチを防止）
+      nameScore = 1;
     }
+    if (nameScore === 0) continue;
+    scored.push({ entry, nameScore });
   }
 
-  return { matched, partial };
+  // 住所なし → 名前スコア順で返す
+  if (!normAddr || normAddr.length < 2) {
+    scored.sort((a, b) => b.nameScore - a.nameScore);
+    return { matched: scored.map(s => s.entry), partial: [] };
+  }
+
+  // 住所あり → アドレスマッチで matched / partial を分ける
+  const matched = [];
+  const partial = [];
+
+  for (const { entry, nameScore } of scored) {
+    // DB住所が検索語を含む、または DB住所が3文字以上で検索語がDB住所を含む
+    // ※ entry.addr_n が空文字の場合は誤マッチになるため逆包含は length >= 3 を必須とする
+    const addrHit =
+      entry.addr_n.includes(normAddr) ||
+      (entry.addr_n.length >= 3 && normAddr.includes(entry.addr_n));
+
+    if (addrHit) matched.push({ entry, nameScore });
+    else         partial.push({ entry, nameScore });
+  }
+
+  matched.sort((a, b) => b.nameScore - a.nameScore);
+  partial.sort((a, b) => b.nameScore - a.nameScore);
+
+  return {
+    matched: matched.map(s => s.entry),
+    partial: partial.map(s => s.entry),
+  };
 }
 
 // ============================================================
