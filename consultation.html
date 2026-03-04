@@ -67,7 +67,8 @@
     .nav-drawer {
       display: flex; flex-direction: column;
       position: fixed; top: 60px; right: 0; bottom: 0; z-index: 99;
-      width: 260px;
+      width: 260px; height: auto;
+      padding: 0; align-items: stretch;
       background: #111;
       box-shadow: -4px 0 20px rgba(0,0,0,.6);
       border-left: 3px solid #e53e3e;
@@ -329,6 +330,12 @@
       border-radius: 12px;
       overflow: hidden;
     }
+    @media (max-width: 640px) {
+      .calendly-inline-widget {
+        height: 1050px;
+        border-radius: 8px;
+      }
+    }
 
     /* ===== PAYMENT INFO ===== */
     .payment-info {
@@ -568,7 +575,7 @@
 
     <div class="calendly-inline-widget"
          data-url="https://calendly.com/stopinvscam/30min?hide_gdpr_banner=1&primary_color=276749&locale=ja"
-         style="min-width:320px;height:700px;"></div>
+         style="min-width:320px;"></div>
     <script type="text/javascript" src="https://assets.calendly.com/assets/external/widget.js" async></script>
   </div>
 
