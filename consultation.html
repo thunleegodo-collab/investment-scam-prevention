@@ -375,6 +375,40 @@
     }
     .faq-item.open .faq-a { display: block; }
 
+    /* ===== TOKUSHO ===== */
+    .tokusho {
+      background: #fff;
+      border-radius: 16px;
+      border: 1px solid #e2e8f0;
+      padding: 2rem;
+      margin-bottom: 1.75rem;
+      box-shadow: 0 2px 12px rgba(0,0,0,.05);
+    }
+    .tokusho .card-title { font-size: 1rem; }
+    .tokusho table {
+      width: 100%; border-collapse: collapse;
+      font-size: .875rem;
+    }
+    .tokusho th, .tokusho td {
+      padding: .7rem .9rem;
+      border-bottom: 1px solid #f0f0f0;
+      vertical-align: top;
+      text-align: left;
+    }
+    .tokusho th {
+      width: 38%;
+      color: var(--gray);
+      font-weight: 600;
+      white-space: nowrap;
+      background: var(--light);
+    }
+    .tokusho tr:last-child th,
+    .tokusho tr:last-child td { border-bottom: none; }
+    @media (max-width: 480px) {
+      .tokusho th { width: 42%; font-size: .78rem; }
+      .tokusho td { font-size: .82rem; }
+    }
+
     /* ===== DISCLAIMER ===== */
     .disclaimer {
       background: #fffff0;
@@ -590,6 +624,67 @@
         <div class="faq-a">はい、ご家族や知人の方からのご相談も受け付けております。状況をお聞きし、対応方法についてアドバイスいたします。</div>
       </div>
     </div>
+  </div>
+
+  <!-- 特定商取引法に基づく表記 -->
+  <div class="tokusho" id="tokusho">
+    <div class="card-title">📋 特定商取引法に基づく表記</div>
+    <table>
+      <tr>
+        <th>販売業者</th>
+        <td>サンリー合同会社</td>
+      </tr>
+      <tr>
+        <th>屋号</th>
+        <td>投資詐欺防止相談室</td>
+      </tr>
+      <tr>
+        <th>所在地</th>
+        <td>請求があり次第、遅滞なく開示します</td>
+      </tr>
+      <tr>
+        <th>電話番号</th>
+        <td>050-1781-6958</td>
+      </tr>
+      <tr>
+        <th>メールアドレス</th>
+        <td><a href="mailto:thunleegodo@gmail.com">thunleegodo@gmail.com</a></td>
+      </tr>
+      <tr>
+        <th>運営責任者</th>
+        <td>サンリー合同会社 代表</td>
+      </tr>
+      <tr>
+        <th>サービス名</th>
+        <td>投資詐欺・金融トラブル 個別相談</td>
+      </tr>
+      <tr>
+        <th>販売価格</th>
+        <td>¥10,000（税込）/ 30分</td>
+      </tr>
+      <tr>
+        <th>支払方法</th>
+        <td>PayPay・銀行振込</td>
+      </tr>
+      <tr>
+        <th>支払時期</th>
+        <td>ご予約後、相談実施前までにお支払いください</td>
+      </tr>
+      <tr>
+        <th>サービス提供時期</th>
+        <td>お支払い確認後、ご予約日時にZoomまたは電話にて提供</td>
+      </tr>
+      <tr>
+        <th>キャンセル・返金</th>
+        <td>相談日の<strong>24時間前まで</strong>はキャンセル無料（全額返金）。<br>
+            24時間以内のキャンセルは相談料の50%をキャンセル料として申し受けます。<br>
+            相談実施後の返金はいたしかねます。</td>
+      </tr>
+      <tr>
+        <th>動作環境</th>
+        <td>Zoom利用の場合、インターネット接続環境およびカメラ・マイク対応端末が必要です</td>
+      </tr>
+    </table>
   </div>
 
   <!-- 免責事項 -->
