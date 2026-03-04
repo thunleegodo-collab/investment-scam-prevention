@@ -324,12 +324,13 @@
     }
 
     /* Calendly ウィジェット本体（埋め込み後はこちらが使われる） */
-    .calendly-inline-widget {
-      min-width: 0 !important;
+    .calendly-frame {
       width: 100%;
       height: 700px;
+      border: none;
       border-radius: 12px;
       overflow: hidden;
+      display: block;
     }
     @media (max-width: 640px) {
       .booking-section {
@@ -338,7 +339,7 @@
         border-left: none;
         border-right: none;
       }
-      .calendly-inline-widget {
+      .calendly-frame {
         height: 1100px;
         border-radius: 0;
       }
@@ -580,9 +581,9 @@
       ⚠ 予約後、担当者よりお支払い方法（銀行振込 / PayPay 等）をご案内します。お支払い確認後に相談を確定いたします。
     </div>
 
-    <div class="calendly-inline-widget"
-         data-url="https://calendly.com/stopinvscam/30min?hide_gdpr_banner=1&primary_color=276749&locale=ja&timezone=Asia%2FTokyo"></div>
-    <script type="text/javascript" src="https://assets.calendly.com/assets/external/widget.js" async></script>
+    <iframe class="calendly-frame"
+            src="https://calendly.com/stopinvscam/30min?hide_gdpr_banner=1&primary_color=276749&locale=ja&timezone=Asia/Tokyo&embed_type=Inline"
+            title="予約カレンダー" loading="lazy" allowfullscreen></iframe>
   </div>
 
   <!-- 料金・お支払い -->
