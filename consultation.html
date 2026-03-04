@@ -325,21 +325,22 @@
 
     /* Calendly ウィジェット本体（埋め込み後はこちらが使われる） */
     .calendly-inline-widget {
-      min-width: 320px;
+      min-width: 0 !important;
+      width: 100%;
       height: 700px;
       border-radius: 12px;
       overflow: hidden;
     }
     @media (max-width: 640px) {
       .booking-section {
-        padding: 1.25rem 0.75rem;
+        padding: 1.25rem 0;
+        border-radius: 0;
+        border-left: none;
+        border-right: none;
       }
       .calendly-inline-widget {
-        min-width: 0 !important;
-        width: 100%;
-        height: 1200px;
-        border-radius: 8px;
-        zoom: 0.88;
+        height: 1100px;
+        border-radius: 0;
       }
     }
 
@@ -580,8 +581,7 @@
     </div>
 
     <div class="calendly-inline-widget"
-         data-url="https://calendly.com/stopinvscam/30min?hide_gdpr_banner=1&primary_color=276749&locale=ja"
-         style="min-width:320px;"></div>
+         data-url="https://calendly.com/stopinvscam/30min?hide_gdpr_banner=1&primary_color=276749&locale=ja&timezone=Asia%2FTokyo"></div>
     <script type="text/javascript" src="https://assets.calendly.com/assets/external/widget.js" async></script>
   </div>
 
