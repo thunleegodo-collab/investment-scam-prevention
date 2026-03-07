@@ -1,0 +1,834 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- SEO基本メタタグ -->
+  <meta name="description" content="元証券会社専門家による投資詐欺の個別相談。「この業者は大丈夫？」「この利回りは怪しい？」30分1万円でZoomまたは電話で即判定。SNS型投資詐欺・ロマンス詐欺に対応。">
+  <meta name="keywords" content="投資詐欺相談,投資詐欺判定,元証券会社,投資詐欺見分け方,有料相談,投資トラブル相談,SNS投資詐欺相談">
+  <meta name="author" content="投資詐欺防止相談室">
+  <link rel="canonical" href="https://あなたのドメイン.com/consultation.html">
+  <!-- OGP -->
+  <meta property="og:title" content="投資詐欺・金融トラブル 個別相談 | 元証券マンが即判定">
+  <meta property="og:description" content="「この投資話は本物？」元証券会社専門家が30分1万円で見極めます。Zoom・電話対応。">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://あなたのドメイン.com/consultation.html">
+  <meta property="og:locale" content="ja_JP">
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="投資詐欺・金融トラブル 個別相談 | 元証券マンが即判定">
+  <meta name="twitter:description" content="元証券会社専門家が投資詐欺かどうか30分で見極めます。相談料1万円。Zoom・電話対応。">
+  <title>有料個別相談 | 投資詐欺防止.jp</title>
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --red:      #e53e3e;
+      --red-dark: #c53030;
+      --navy:     #1a365d;
+      --blue:     #2b6cb0;
+      --green:    #276749;
+      --green-bg: #f0fff4;
+      --yellow:   #f6e05e;
+      --gray:     #718096;
+      --light:    #f7fafc;
+      --white:    #ffffff;
+    }
+
+    html { scroll-behavior: smooth; }
+    body {
+      font-family: "Hiragino Kaku Gothic ProN", "Noto Sans JP", sans-serif;
+      color: #2d3748;
+      line-height: 1.7;
+      background: var(--light);
+    }
+
+    /* ===== NAV ===== */
+    nav {
+      position: fixed; top: 0; width: 100%; z-index: 100;
+      background: var(--navy);
+      display: flex; align-items: center; justify-content: space-between;
+      padding: 0 2rem; height: 60px;
+      box-shadow: 0 2px 8px rgba(0,0,0,.3);
+    }
+    .nav-logo { color: #fff; font-weight: 700; font-size: 1.1rem; text-decoration: none; }
+    .nav-logo span { color: var(--yellow); }
+    .nav-links { display: flex; gap: 1.5rem; list-style: none; }
+    .nav-links a { color: #cbd5e0; text-decoration: none; font-size: .9rem; transition: color .2s; }
+    .nav-links a:hover { color: #fff; }
+    .nav-links a.active { color: #fff; font-weight: 700; }
+    .nav-links a.news-link {
+      background: var(--red); color: #fff;
+      padding: .25rem .75rem; border-radius: 999px; font-weight: 600;
+    }
+    .nav-links a.consult-link {
+      background: var(--green); color: #fff;
+      padding: .25rem .75rem; border-radius: 999px; font-weight: 600;
+    }
+    .nav-links a.consult-link:hover { background: #22543d; color: #fff; }
+
+    /* ========= HAMBURGER MENU ========= */
+    .hamburger {
+      display: none;
+      background: none; border: none;
+      color: #fff; font-size: 1.6rem;
+      cursor: pointer; padding: .2rem .4rem;
+      line-height: 1; border-radius: 4px;
+      transition: background .15s;
+    }
+    .hamburger:hover { background: rgba(255,255,255,.12); }
+
+    /* モバイルドロワー */
+    .nav-drawer {
+      display: flex; flex-direction: column;
+      position: fixed; top: 60px; right: 0; bottom: 0; z-index: 99;
+      width: 260px; height: auto;
+      padding: 0; align-items: stretch;
+      background: #111;
+      box-shadow: -4px 0 20px rgba(0,0,0,.6);
+      border-left: 3px solid #e53e3e;
+      transform: translateX(110%);
+      transition: transform .25s ease;
+      overflow-y: auto;
+      visibility: hidden;
+    }
+    .nav-drawer.open { transform: translateX(0); visibility: visible; }
+    .nav-drawer a {
+      color: #fff; text-decoration: none;
+      padding: 1rem 1.5rem; font-size: 1rem; font-weight: 600;
+      border-bottom: 1px solid #222;
+      border-left: 3px solid transparent;
+      transition: background .15s;
+      display: flex; align-items: center; gap: .75rem;
+      background: #111; flex-shrink: 0;
+    }
+    .nav-drawer a:hover  { background: #1a1a1a; }
+    .nav-drawer a.active { background: #1a1a1a; }
+    .nav-drawer a.news-link   { border-left-color: #e53e3e; }
+    .nav-drawer a.news-link:hover { background: #1a1a1a; }
+    .nav-drawer a.checker-link { border-left-color: #2b6cb0; }
+    .nav-drawer a.checker-link:hover { background: #1a1a1a; }
+    .nav-drawer a.consult-link { border-left-color: #276749; }
+    .nav-drawer a.consult-link:hover { background: #1a1a1a; }
+
+    @media (max-width: 640px) {
+      .hamburger { display: flex; align-items: center; }
+      .nav-links { display: none; }
+    }
+
+    /* ===== HERO ===== */
+    .page-header {
+      background: linear-gradient(135deg, #1c4532 0%, #276749 60%, #2f855a 100%);
+      padding: 100px 2rem 4rem;
+      text-align: center;
+      position: relative;
+      overflow: hidden;
+    }
+    .page-header::before {
+      content: "";
+      position: absolute; inset: 0;
+      background: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23ffffff' fill-opacity='0.04'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+    }
+    .page-header-content { position: relative; max-width: 720px; margin: 0 auto; }
+    .page-badge {
+      display: inline-block;
+      background: rgba(255,255,255,.15);
+      border: 1px solid rgba(255,255,255,.3);
+      color: #9ae6b4;
+      padding: .35rem 1rem; border-radius: 999px;
+      font-size: .85rem; font-weight: 600;
+      margin-bottom: 1.25rem; letter-spacing: .05em;
+    }
+    .page-header h1 {
+      color: #fff;
+      font-size: clamp(1.8rem, 4vw, 2.8rem);
+      font-weight: 800; line-height: 1.3;
+      margin-bottom: 1rem;
+    }
+    .page-header h1 span { color: #9ae6b4; }
+    .page-header p { color: #c6f6d5; font-size: 1.05rem; max-width: 560px; margin: 0 auto 2rem; }
+    /* ===== CATCHPHRASES ===== */
+    .hero-catchphrases {
+      display: flex; flex-direction: column; gap: .6rem;
+      margin: 1.5rem auto 2rem;
+      max-width: 640px;
+    }
+    .hero-catch {
+      font-size: clamp(.9rem, 2vw, 1.05rem);
+      font-weight: 700;
+      color: #fff;
+      background: rgba(255,255,255,.1);
+      border-left: 3px solid #9ae6b4;
+      border-radius: 0 8px 8px 0;
+      padding: .6rem 1.1rem;
+      text-align: left;
+      letter-spacing: .02em;
+    }
+    .hero-catch.primary {
+      font-size: clamp(1rem, 2.2vw, 1.2rem);
+      background: rgba(154,230,180,.15);
+      border-left-width: 4px;
+    }
+
+    /* ===== CREDENTIALS CARD ===== */
+    .credentials-card {
+      background: linear-gradient(135deg, #1c4532 0%, #276749 100%);
+      border-radius: 16px;
+      padding: 2rem;
+      margin-bottom: 1.75rem;
+      color: #fff;
+    }
+    .credentials-card .card-title {
+      color: #9ae6b4;
+      border-bottom-color: rgba(154,230,180,.25);
+      font-size: 1rem;
+    }
+    .cred-list { display: flex; flex-direction: column; gap: 1rem; }
+    .cred-item {
+      display: flex; align-items: flex-start; gap: 1rem;
+      background: rgba(255,255,255,.08);
+      border-radius: 10px;
+      padding: 1rem 1.25rem;
+    }
+    .cred-num {
+      min-width: 32px; height: 32px; border-radius: 50%;
+      background: #9ae6b4; color: #1c4532;
+      display: flex; align-items: center; justify-content: center;
+      font-weight: 800; font-size: .85rem; flex-shrink: 0;
+    }
+    .cred-item p {
+      font-size: 1rem; font-weight: 700; color: #fff;
+      line-height: 1.5; margin: 0;
+    }
+
+    .price-chip {
+      display: inline-flex; align-items: center; gap: 1rem;
+      background: rgba(255,255,255,.12);
+      border: 1px solid rgba(255,255,255,.25);
+      border-radius: 16px;
+      padding: 1rem 2rem;
+      flex-wrap: wrap; justify-content: center;
+    }
+    .price-chip .price { font-size: 2rem; font-weight: 800; color: #fff; }
+    .price-chip .price small { font-size: 1rem; font-weight: 400; color: #c6f6d5; }
+    .price-chip .sep { color: rgba(255,255,255,.3); font-size: 1.5rem; }
+    .price-chip .duration { font-size: 1.1rem; font-weight: 700; color: #9ae6b4; }
+
+    /* ===== MAIN ===== */
+    .main {
+      max-width: 860px;
+      margin: 0 auto;
+      padding: 3rem 1.5rem 5rem;
+    }
+
+    /* ===== CARD ===== */
+    .card {
+      background: #fff;
+      border-radius: 16px;
+      border: 1px solid #e2e8f0;
+      padding: 2rem;
+      margin-bottom: 1.75rem;
+      box-shadow: 0 2px 12px rgba(0,0,0,.05);
+    }
+    .card-title {
+      font-size: 1.15rem; font-weight: 800; color: var(--navy);
+      margin-bottom: 1.25rem;
+      padding-bottom: .75rem;
+      border-bottom: 2px solid var(--light);
+    }
+
+    /* ===== CONCERN LIST ===== */
+    .concern-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      gap: 1rem;
+    }
+    .concern-item {
+      background: var(--light);
+      border-radius: 12px;
+      padding: 1rem 1.25rem;
+      border-left: 4px solid var(--green);
+      font-size: .9rem; color: #2d3748;
+    }
+    .concern-item::before { content: "✓ "; color: var(--green); font-weight: 700; }
+
+    /* ===== HOW IT WORKS ===== */
+    .steps-flow {
+      display: flex;
+      gap: 0;
+      flex-wrap: wrap;
+    }
+    .step-flow-item {
+      flex: 1; min-width: 160px;
+      text-align: center;
+      padding: 1.25rem 1rem;
+      position: relative;
+    }
+    .step-flow-item:not(:last-child)::after {
+      content: "→";
+      position: absolute; right: -10px; top: 50%;
+      transform: translateY(-50%);
+      color: #cbd5e0; font-size: 1.2rem;
+    }
+    .step-flow-num {
+      width: 44px; height: 44px; border-radius: 50%;
+      background: var(--navy); color: #fff;
+      display: flex; align-items: center; justify-content: center;
+      font-weight: 800; font-size: 1.1rem;
+      margin: 0 auto .75rem;
+    }
+    .step-flow-item h4 { font-size: .9rem; font-weight: 700; color: var(--navy); margin-bottom: .3rem; }
+    .step-flow-item p  { font-size: .78rem; color: var(--gray); }
+
+    @media (max-width: 580px) {
+      .steps-flow { flex-direction: column; }
+      .step-flow-item:not(:last-child)::after { content: "↓"; right: auto; left: 50%; top: auto; bottom: -14px; transform: translateX(-50%); }
+    }
+
+    /* ===== CALENDLY SECTION ===== */
+    .booking-section {
+      background: #fff;
+      border-radius: 16px;
+      border: 2px solid var(--green);
+      padding: 2rem;
+      margin-bottom: 1.75rem;
+      box-shadow: 0 4px 24px rgba(39,103,73,.1);
+    }
+    .booking-section .card-title {
+      border-color: #c6f6d5;
+      color: var(--green);
+    }
+    .calendly-notice {
+      background: #fffbeb;
+      border-left: 4px solid #f6ad55;
+      border-radius: 0 8px 8px 0;
+      padding: .85rem 1.1rem;
+      font-size: .82rem; color: #744210;
+      margin-bottom: 1.25rem;
+    }
+
+    /* カレンダー展開前のプレースホルダー */
+    .calendly-placeholder {
+      background: var(--light);
+      border: 2px dashed #cbd5e0;
+      border-radius: 12px;
+      padding: 3rem 2rem;
+      text-align: center;
+      color: var(--gray);
+    }
+    .calendly-placeholder .cal-icon { font-size: 3rem; margin-bottom: 1rem; }
+    .calendly-placeholder h3 { font-size: 1.1rem; color: var(--navy); margin-bottom: .5rem; }
+    .calendly-placeholder p { font-size: .875rem; margin-bottom: 1.5rem; }
+    .setup-note {
+      background: #fff;
+      border: 1px solid #e2e8f0;
+      border-radius: 8px;
+      padding: 1rem 1.25rem;
+      font-size: .8rem;
+      color: #4a5568;
+      text-align: left;
+    }
+    .setup-note strong { color: var(--navy); display: block; margin-bottom: .4rem; }
+    .setup-note code {
+      background: var(--light);
+      border: 1px solid #e2e8f0;
+      border-radius: 4px;
+      padding: .1rem .4rem;
+      font-size: .78rem;
+      color: #553c9a;
+    }
+
+    /* Calendly ウィジェット本体（埋め込み後はこちらが使われる） */
+    .calendly-frame {
+      width: 100%;
+      height: 700px;
+      border: none;
+      border-radius: 12px;
+      overflow: hidden;
+      display: block;
+    }
+    @media (max-width: 640px) {
+      .booking-section {
+        padding: 1.25rem 0;
+        border-radius: 0;
+        border-left: none;
+        border-right: none;
+      }
+      .calendly-frame {
+        height: 1100px;
+        border-radius: 0;
+      }
+    }
+
+    /* ===== PAYMENT INFO ===== */
+    .payment-info {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 1rem;
+      margin-top: .75rem;
+    }
+    .payment-method {
+      background: var(--light);
+      border-radius: 10px;
+      padding: 1rem 1.25rem;
+      text-align: center;
+    }
+    .payment-method .pm-icon { font-size: 1.8rem; margin-bottom: .4rem; }
+    .payment-method h4 { font-size: .9rem; font-weight: 700; color: var(--navy); margin-bottom: .2rem; }
+    .payment-method p  { font-size: .78rem; color: var(--gray); }
+    .payment-badge {
+      display: inline-block;
+      font-size: .7rem; font-weight: 600;
+      background: #fefcbf; color: #744210;
+      padding: .15rem .5rem; border-radius: 4px;
+      margin-top: .4rem;
+    }
+
+    /* ===== FAQ ===== */
+    .faq-list { display: flex; flex-direction: column; gap: .75rem; }
+    .faq-item {
+      border: 1px solid #e2e8f0;
+      border-radius: 10px;
+      overflow: hidden;
+    }
+    .faq-q {
+      display: flex; align-items: center; justify-content: space-between;
+      padding: 1rem 1.25rem;
+      cursor: pointer;
+      font-weight: 600; font-size: .9rem; color: var(--navy);
+      background: #fff;
+      transition: background .15s;
+      gap: 1rem;
+    }
+    .faq-q:hover { background: var(--light); }
+    .faq-q .q-mark { color: var(--blue); font-weight: 800; margin-right: .5rem; flex-shrink: 0; }
+    .faq-q .chevron { transition: transform .2s; flex-shrink: 0; color: var(--gray); }
+    .faq-item.open .faq-q .chevron { transform: rotate(180deg); }
+    .faq-a {
+      display: none;
+      padding: 1rem 1.25rem;
+      font-size: .875rem; color: #4a5568;
+      background: var(--light);
+      border-top: 1px solid #e2e8f0;
+    }
+    .faq-item.open .faq-a { display: block; }
+
+    /* ===== TOKUSHO ===== */
+    .tokusho {
+      background: #fff;
+      border-radius: 16px;
+      border: 1px solid #e2e8f0;
+      padding: 2rem;
+      margin-bottom: 1.75rem;
+      box-shadow: 0 2px 12px rgba(0,0,0,.05);
+    }
+    .tokusho .card-title { font-size: 1rem; }
+    .tokusho table {
+      width: 100%; border-collapse: collapse;
+      font-size: .875rem;
+    }
+    .tokusho th, .tokusho td {
+      padding: .7rem .9rem;
+      border-bottom: 1px solid #f0f0f0;
+      vertical-align: top;
+      text-align: left;
+    }
+    .tokusho th {
+      width: 38%;
+      color: var(--gray);
+      font-weight: 600;
+      white-space: nowrap;
+      background: var(--light);
+    }
+    .tokusho tr:last-child th,
+    .tokusho tr:last-child td { border-bottom: none; }
+    @media (max-width: 560px) {
+      .tokusho table, .tokusho tbody,
+      .tokusho tr, .tokusho th, .tokusho td {
+        display: block; width: 100%;
+      }
+      .tokusho th {
+        background: var(--light);
+        font-size: .75rem; color: var(--gray);
+        padding: .6rem .9rem .2rem;
+        border-bottom: none;
+        width: 100%;
+      }
+      .tokusho td {
+        font-size: .875rem;
+        padding: .2rem .9rem .75rem;
+        border-bottom: none;
+      }
+      .tokusho tr { border-bottom: 1px solid #f0f0f0; }
+      .tokusho tr:last-child { border-bottom: none; }
+    }
+
+    /* ===== DISCLAIMER ===== */
+    .disclaimer {
+      background: #fffff0;
+      border: 1px solid #f6e05e;
+      border-radius: 12px;
+      padding: 1.25rem 1.5rem;
+      font-size: .82rem;
+      color: #744210;
+    }
+    .disclaimer strong { display: block; margin-bottom: .5rem; color: #744210; }
+
+    /* ===== FOOTER ===== */
+    footer {
+      background: var(--navy); color: #a0aec0;
+      text-align: center; padding: 2rem;
+      font-size: .85rem;
+    }
+    footer strong { color: #fff; }
+  </style>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "投資詐欺かどうか、どうやって見分けますか？",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "「必ず儲かる」「元本保証」「高利回り」「今すぐ」などの言葉が出たら要注意です。金融庁への登録確認も必須です。"
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "相談料はいくらですか？",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "30分1万円（税込）です。ZoomまたはLINE通話で対応します。"
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "SNS型投資詐欺の特徴は何ですか？",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "SNSや著名人の偽広告でLINEに誘導し、最初は少額で利益が出たように見せて大きな金額を投資させて消える手口です。"
+        }
+      }
+    ]
+  }
+  </script>
+</head>
+<body>
+
+<!-- ナビ -->
+<nav>
+  <a class="nav-logo" href="index.html"><span>⚠</span> 投資詐欺防止.jp</a>
+  <button class="hamburger" id="hamburger" aria-label="メニューを開く" aria-expanded="false">☰</button>
+  <ul class="nav-links">
+    <li><a href="index.html">トップ</a></li>
+    <li><a href="index.html#warning">危険サイン</a></li>
+    <li><a href="index.html#checklist">チェックリスト</a></li>
+    <li><a href="checker.html">🔍 業者チェック</a></li>
+    <li><a href="news.html" class="news-link">📰 ニュース</a></li>
+    <li><a href="consultation.html" class="consult-link active">💬 有料相談</a></li>
+  </ul>
+</nav>
+
+<div id="nav-drawer" class="nav-drawer" role="navigation" aria-label="モバイルメニュー">
+  <a href="index.html">🏠 トップ</a>
+  <a href="index.html#warning">⚠ 危険サイン</a>
+  <a href="index.html#checklist">✔ チェックリスト</a>
+  <a href="checker.html" class="checker-link">🔍 業者チェック</a>
+  <a href="news.html" class="news-link">📰 ニュース</a>
+  <a href="consultation.html" class="consult-link active">💬 有料個別相談</a>
+</div>
+
+<!-- ページヘッダー -->
+<div class="page-header">
+  <div class="page-header-content">
+    <div class="page-badge">PAID CONSULTATION</div>
+    <h1>投資詐欺・金融トラブル<br><span>個別相談</span></h1>
+    <div class="hero-catchphrases">
+      <div class="hero-catch primary">元証券マンが見抜く、その投資は本物か詐欺か</div>
+      <div class="hero-catch">合法案件を知り尽くしているから、詐欺がわかる</div>
+      <div class="hero-catch">警察も弁護士も教えてくれない、投資詐欺の見極め方</div>
+    </div>
+    <p>「この業者は大丈夫？」「この利回りは怪しい？」— 専門家に直接、安心して相談できます。</p>
+    <div class="price-chip">
+      <span class="price">¥10,000<small>（税込）</small></span>
+      <span class="sep">|</span>
+      <span class="duration">🕐 30分・Zoom または 電話</span>
+    </div>
+  </div>
+</div>
+
+<div class="main">
+
+  <!-- 専門性・信頼性 -->
+  <div class="credentials-card">
+    <div class="card-title">🎯 なぜこの相談か</div>
+    <div class="cred-list">
+      <div class="cred-item">
+        <div class="cred-num">1</div>
+        <p>元証券マンが見抜く、その投資は本物か詐欺か</p>
+      </div>
+      <div class="cred-item">
+        <div class="cred-num">2</div>
+        <p>合法案件を知り尽くしているから、詐欺がわかる</p>
+      </div>
+      <div class="cred-item">
+        <div class="cred-num">3</div>
+        <p>警察も弁護士も教えてくれない、投資詐欺の見極め方</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- こんな悩みに対応 -->
+  <div class="card">
+    <div class="card-title">💡 こんなお悩みに対応します</div>
+    <div class="concern-grid">
+      <div class="concern-item">この業者・投資話が本当に安全か判断してほしい</div>
+      <div class="concern-item">SNS・マッチングアプリで投資を勧められている</div>
+      <div class="concern-item">家族・友人が怪しい投資話に巻き込まれている</div>
+      <div class="concern-item">業者から連絡があり、これは詐欺か判断したい</div>
+      <div class="concern-item">警察・消費者センターへの相談の仕方がわからない</div>
+      <div class="concern-item">提示された利回りが現実的かどうか確認・判断してほしい</div>
+    </div>
+  </div>
+
+  <!-- 相談の流れ -->
+  <div class="card">
+    <div class="card-title">📋 相談の流れ</div>
+    <div class="steps-flow">
+      <div class="step-flow-item">
+        <div class="step-flow-num">1</div>
+        <h4>日時を選択</h4>
+        <p>下のカレンダーから<br>ご都合の良い日時を選択</p>
+      </div>
+      <div class="step-flow-item">
+        <div class="step-flow-num">2</div>
+        <h4>確認メール受信</h4>
+        <p>予約完了後、<br>お支払い案内メールをお送りします</p>
+      </div>
+      <div class="step-flow-item">
+        <div class="step-flow-num">3</div>
+        <h4>お支払い</h4>
+        <p>メール内の方法で<br>10,000円をお支払い</p>
+      </div>
+      <div class="step-flow-item">
+        <div class="step-flow-num">4</div>
+        <h4>相談実施</h4>
+        <p>Zoom または 電話で<br>30分の個別相談</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- 予約カレンダー -->
+  <div class="booking-section" id="booking">
+    <div class="card-title">📅 日時を選んで予約する</div>
+
+    <div class="calendly-notice">
+      ⚠ 予約後、担当者よりお支払い方法をご案内します。クレジットカード・銀行振込・PayPay に対応しています。お支払い確認後に相談を確定いたします。
+    </div>
+
+    <iframe class="calendly-frame"
+            src="https://calendly.com/stopinvscam/30min?hide_gdpr_banner=1&primary_color=276749&locale=ja&timezone=Asia/Tokyo&embed_type=Inline"
+            title="予約カレンダー" loading="lazy" allowfullscreen></iframe>
+  </div>
+
+  <!-- 料金・お支払い -->
+  <div class="card">
+    <div class="card-title">💳 料金・お支払い方法</div>
+    <p style="font-size:.9rem;color:#4a5568;margin-bottom:1.25rem;">
+      相談料は <strong>30分 ¥10,000（税込）</strong> です。<br>
+      ご予約後、担当者よりお支払い方法をご案内します。
+    </p>
+    <div class="payment-info">
+      <div class="payment-method">
+        <div class="pm-icon">🏦</div>
+        <h4>銀行振込</h4>
+        <p>ご予約後にお伝えする口座へお振込みください</p>
+        <div class="payment-badge">手数料無料</div>
+      </div>
+      <div class="payment-method">
+        <div class="pm-icon">📱</div>
+        <h4>PayPay</h4>
+        <p>QRコードまたは送金リンクでお支払い</p>
+        <div class="payment-badge">即時確認</div>
+      </div>
+      <div class="payment-method">
+        <div class="pm-icon">💳</div>
+        <h4>クレジットカード</h4>
+        <p>Visa / Mastercard / AMEX 等対応</p>
+        <a href="https://buy.stripe.com/8x25kC6hXdwG5uiaMH9k401" target="_blank" rel="noopener"
+           style="display:inline-block;margin-top:.5rem;background:var(--green);color:#fff;padding:.4rem 1rem;border-radius:8px;font-size:.8rem;font-weight:700;text-decoration:none;transition:background .2s;">カードで支払う</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- FAQ -->
+  <div class="card">
+    <div class="card-title">❓ よくある質問</div>
+    <div class="faq-list">
+      <div class="faq-item">
+        <div class="faq-q" onclick="toggleFaq(this)">
+          <span><span class="q-mark">Q.</span>どのような形式で相談できますか？</span>
+          <span class="chevron">▼</span>
+        </div>
+        <div class="faq-a">ZoomまたはGoogle Meetによるビデオ通話、もしくはお電話での対応となります。ご予約時にご希望の形式をお選びください。</div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q" onclick="toggleFaq(this)">
+          <span><span class="q-mark">Q.</span>30分を超えた場合はどうなりますか？</span>
+          <span class="chevron">▼</span>
+        </div>
+        <div class="faq-a">30分を超える場合は、延長料金（10分あたり3,000円）が発生します。事前にご了承いただいた上で延長いたします。ご不要の場合は30分でお切りします。</div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q" onclick="toggleFaq(this)">
+          <span><span class="q-mark">Q.</span>キャンセル・日時変更はできますか？</span>
+          <span class="chevron">▼</span>
+        </div>
+        <div class="faq-a">相談日の<strong>24時間前まで</strong>であればキャンセル・変更が可能です。Calendlyの確認メールにあるリンクから操作できます。24時間以内のキャンセルは相談料の50%をキャンセル料としていただきます。</div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q" onclick="toggleFaq(this)">
+          <span><span class="q-mark">Q.</span>法的なアドバイスや弁護士の紹介はできますか？</span>
+          <span class="chevron">▼</span>
+        </div>
+        <div class="faq-a">法的なアドバイス（法律相談）は弁護士資格を持つ方のみが行えます。当相談では詐欺の手口の解説・被害対応の一般的な手順・公的機関への相談方法などのご案内を行います。法律相談が必要な場合は、法テラス（0570-078374）または弁護士紹介サービスをご案内します。</div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q" onclick="toggleFaq(this)">
+          <span><span class="q-mark">Q.</span>相談内容は秘密にしてもらえますか？</span>
+          <span class="chevron">▼</span>
+        </div>
+        <div class="faq-a">相談内容は厳重に管理し、第三者に開示することはありません。ただし、相談内容が犯罪被害に関するものの場合、ご本人の同意を得た上で関係機関への橋渡しをお手伝いする場合があります。</div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q" onclick="toggleFaq(this)">
+          <span><span class="q-mark">Q.</span>家族が被害を受けているのですが、本人以外でも相談できますか？</span>
+          <span class="chevron">▼</span>
+        </div>
+        <div class="faq-a">はい、ご家族や知人の方からのご相談も受け付けております。状況をお聞きし、対応方法についてアドバイスいたします。</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 特定商取引法に基づく表記 -->
+  <div class="tokusho" id="tokusho">
+    <div class="card-title">📋 特定商取引法に基づく表記</div>
+    <table>
+      <tr>
+        <th>販売業者</th>
+        <td>サンリー合同会社</td>
+      </tr>
+      <tr>
+        <th>屋号</th>
+        <td>投資詐欺防止相談室</td>
+      </tr>
+      <tr>
+        <th>所在地</th>
+        <td>請求があり次第、遅滞なく開示します</td>
+      </tr>
+      <tr>
+        <th>電話番号</th>
+        <td>050-1781-6958</td>
+      </tr>
+      <tr>
+        <th>メールアドレス</th>
+        <td><a href="mailto:thunleegodo@gmail.com">thunleegodo@gmail.com</a></td>
+      </tr>
+      <tr>
+        <th>運営責任者</th>
+        <td>サンリー合同会社 代表</td>
+      </tr>
+      <tr>
+        <th>サービス名</th>
+        <td>投資詐欺・金融トラブル 個別相談</td>
+      </tr>
+      <tr>
+        <th>販売価格</th>
+        <td>¥10,000（税込）/ 30分</td>
+      </tr>
+      <tr>
+        <th>支払方法</th>
+        <td>クレジットカード（Stripe決済）・PayPay・銀行振込</td>
+      </tr>
+      <tr>
+        <th>支払時期</th>
+        <td>ご予約後、相談実施前までにお支払いください</td>
+      </tr>
+      <tr>
+        <th>サービス提供時期</th>
+        <td>お支払い確認後、ご予約日時にZoomまたは電話にて提供</td>
+      </tr>
+      <tr>
+        <th>キャンセル・返金</th>
+        <td>相談日の<strong>24時間前まで</strong>はキャンセル無料（全額返金）。<br>
+            24時間以内のキャンセルは相談料の50%をキャンセル料として申し受けます。<br>
+            相談実施後の返金はいたしかねます。</td>
+      </tr>
+      <tr>
+        <th>動作環境</th>
+        <td>Zoom利用の場合、インターネット接続環境およびカメラ・マイク対応端末が必要です</td>
+      </tr>
+    </table>
+  </div>
+
+  <!-- 免責事項 -->
+  <div class="disclaimer">
+    <strong>⚠ 免責事項</strong>
+    本相談サービスは投資詐欺に関する情報提供・アドバイスを目的としており、<b>法律相談・投資助言・資産運用のアドバイスには該当しません</b>。
+    相談内容に基づいて行動した結果について、当サービスは一切の責任を負いかねます。
+    法的な問題については弁護士に、投資に関する個別アドバイスについては金融庁登録の投資顧問業者にご相談ください。
+  </div>
+
+</div>
+
+<!-- フッター -->
+<footer>
+  <strong>投資詐欺防止啓発サイト</strong><br>
+  <span style="font-size:.8rem; margin-top:.5rem; display:block;">
+    本サイトは投資詐欺の啓発を目的として作成されたものであり、特定の金融商品・サービスの勧誘を行うものではありません。
+  </span>
+</footer>
+
+<script>
+// FAQ アコーディオン
+function toggleFaq(el) {
+  el.closest('.faq-item').classList.toggle('open');
+}
+
+// ハンバーガーメニュー
+(function() {
+  var btn    = document.getElementById('hamburger');
+  var drawer = document.getElementById('nav-drawer');
+  if (!btn || !drawer) return;
+
+  function closeMenu() {
+    drawer.classList.remove('open');
+    btn.textContent = '☰';
+    btn.setAttribute('aria-expanded', 'false');
+  }
+  function toggleMenu() {
+    var isOpen = drawer.classList.toggle('open');
+    btn.textContent = isOpen ? '✕' : '☰';
+    btn.setAttribute('aria-expanded', isOpen ? 'true' : 'false');
+  }
+
+  btn.addEventListener('click', function(e) {
+    e.stopPropagation();
+    toggleMenu();
+  });
+  document.addEventListener('click', function(e) {
+    if (!drawer.contains(e.target) && e.target !== btn) closeMenu();
+  });
+  drawer.querySelectorAll('a').forEach(function(a) {
+    a.addEventListener('click', closeMenu);
+  });
+  document.addEventListener('keydown', function(e) {
+    if (e.key === 'Escape') closeMenu();
+  });
+})();
+</script>
+
+</body>
+</html>
