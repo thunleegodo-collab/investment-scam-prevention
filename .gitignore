@@ -1,0 +1,14 @@
+*.py
+*.xlsx
+*.pdf
+chuukai.xlsx
+kinyushohin.xlsx
+kinyushohin.pdf
+touroku.xlsx
+fsa_advisors.json
+fsa_all.json
+add_mobile_menu.py
+build_checker.py
+extract_all_fsa.py
+extract_fsa_data.py
+investment-scam-prevention/
