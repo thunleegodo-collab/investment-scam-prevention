@@ -253,7 +253,7 @@
       border-left: 4px solid var(--green);
       font-size: .9rem; color: #2d3748;
     }
-    .concern-item::before { content: "\2713 "; color: var(--green); font-weight: 700; }
+    .concern-item::before { content: "✓ "; color: var(--green); font-weight: 700; }
 
     /* ===== HOW IT WORKS ===== */
     .steps-flow {
@@ -268,7 +268,7 @@
       position: relative;
     }
     .step-flow-item:not(:last-child)::after {
-      content: "\2192";
+      content: "→";
       position: absolute; right: -10px; top: 50%;
       transform: translateY(-50%);
       color: #cbd5e0; font-size: 1.2rem;
@@ -285,7 +285,7 @@
 
     @media (max-width: 580px) {
       .steps-flow { flex-direction: column; }
-      .step-flow-item:not(:last-child)::after { content: "\2193"; right: auto; left: 50%; top: auto; bottom: -14px; transform: translateX(-50%); }
+      .step-flow-item:not(:last-child)::after { content: "↓"; right: auto; left: 50%; top: auto; bottom: -14px; transform: translateX(-50%); }
     }
 
     /* ===== CALENDLY SECTION ===== */
@@ -804,7 +804,7 @@
       </tr>
       <tr>
         <th>メールアドレス</th>
-        <td><a href="mailto:thunleegodo@gmail.com">thunleegodo@gmail.com</a></td>
+        <td><a href="/cdn-cgi/l/email-protection#c4b0acb1aaa8a1a1a3aba0ab84a3a9a5ada8eaa7aba9"><span class="__cf_email__" data-cfemail="a0d4c8d5ceccc5c5c7cfc4cfe0c7cdc1c9cc8ec3cfcd">[email&#160;protected]</span></a></td>
       </tr>
       <tr>
         <th>運営責任者</th>
@@ -861,7 +861,7 @@
   </span>
 </footer>
 
-<script>
+<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
 // FAQ アコーディオン
 function toggleFaq(el) {
   el.closest('.faq-item').classList.toggle('open');
@@ -891,14 +891,3 @@ function toggleFaq(el) {
   document.addEventListener('click', function(e) {
     if (!drawer.contains(e.target) && e.target !== btn) closeMenu();
   });
-  drawer.querySelectorAll('a').forEach(function(a) {
-    a.addEventListener('click', closeMenu);
-  });
-  document.addEventListener('keydown', function(e) {
-    if (e.key === 'Escape') closeMenu();
-  });
-})();
-</script>
-
-</body>
-</html>
