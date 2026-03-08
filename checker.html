@@ -293,6 +293,7 @@
       .search-card { padding: 1.5rem; }
       .modal-body  { padding: 1rem 1.25rem; }
       .modal-header { padding: 1.5rem 1.25rem 1rem; }
+      .how-to { padding: 1.25rem; }
     }
 
     /* ========= HAMBURGER MENU ========= */
@@ -417,7 +418,7 @@
     <strong>⚠ このチェッカーについて</strong>
     登録されていない＝詐欺の可能性が極めて高い一方、<b>登録があっても安全性を保証するものではありません</b>。
     必ず金融庁の公式サイトでも直接ご確認ください。
-    判断に迷う場合は金融庁相談室（<strong>0570-016811</strong>）にお問い合わせください。
+    判断に迷う場合は金融庁相談室（<b>0570-016811</b>）にお問い合わせください。
   </div>
 
   <!-- 使い方 -->
@@ -605,8 +606,8 @@ document.addEventListener('DOMContentLoaded', () => {
       if (e.key === 'Enter') doSearch();
     });
   });
-  loadData();
   document.getElementById('search-btn').disabled = true;
+  loadData();
 });
 
 // ============================================================
