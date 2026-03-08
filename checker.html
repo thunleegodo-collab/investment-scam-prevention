@@ -272,18 +272,8 @@
     /* ===== HOW TO USE ===== */
     .how-to { background: #fff; border-radius: 16px; border: 1px solid #e2e8f0; padding: 1.75rem; }
     .how-to h3 { font-size: 1rem; font-weight: 700; color: var(--navy); margin-bottom: 1rem; }
-    .step-list { display: flex; flex-direction: column; gap: .75rem; list-style: none; counter-reset: step; }
-    .step-list li {
-      display: flex; gap: .75rem; align-items: flex-start;
-      font-size: .875rem; color: #4a5568;
-    }
-    .step-list li::before {
-      counter-increment: step;
-      content: counter(step);
-      min-width: 24px; height: 24px; border-radius: 50%;
-      background: var(--navy); color: #fff;
-      display: flex; align-items: center; justify-content: center;
-      font-size: .75rem; font-weight: 800; flex-shrink: 0;
+    .how-to-text {
+      font-size: .875rem; color: #4a5568; line-height: 1.85;
     }
 
 
@@ -424,12 +414,9 @@
   <!-- 使い方 -->
   <div class="how-to">
     <h3>📋 チェッカーの使い方</h3>
-    <ol class="step-list">
-      <li>勧誘を受けた業者の<b>会社名</b>（ウェブサイト・名刺・メール等で確認）を入力</li>
-      <li>わかれば<b>住所</b>も入力（省略可）</li>
-      <li>「確認する」ボタンを押す</li>
-      <li>ヒットしない場合は<b>詐欺の可能性が極めて高い</b>ため、すぐに相談窓口へ</li>
-    </ol>
+    <p class="how-to-text">
+      勧誘を受けた業者の<b>会社名</b>（ウェブサイト・名刺・メール等で確認できるもの）を上の欄に入力し、わかれば<b>住所</b>も入力してください（省略可）。「確認する」ボタンを押すと金融庁の登録リストと照合します。ヒットしない場合は<b>無登録業者＝詐欺の可能性が極めて高い</b>ため、すぐに相談窓口へご連絡ください。
+    </p>
   </div>
 
 </div>
