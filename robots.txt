@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://investment-scam-prevention.pages.dev/sitemap.xml
