@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+  <title>プライバシーポリシー | 投資詐欺防止.jp</title>
+  <meta name="description" content="投資詐欺防止相談室（サンリー合同会社）のプライバシーポリシー。個人情報の取り扱い方針についてご説明します。">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://investment-scam-prevention.pages.dev/privacy.html">
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --red:      #e53e3e;
+      --red-dark: #c53030;
+      --navy:     #1a365d;
+      --blue:     #2b6cb0;
+      --green:    #276749;
+      --yellow:   #f6e05e;
+      --gray:     #718096;
+      --light:    #f7fafc;
+    }
+
+    html { scroll-behavior: smooth; }
+    body {
+      font-family: "Hiragino Kaku Gothic ProN", "Noto Sans JP", sans-serif;
+      color: #2d3748;
+      line-height: 1.7;
+      background: var(--light);
+    }
+
+    /* ===== NAV ===== */
+    nav {
+      position: fixed; top: 0; width: 100%; z-index: 100;
+      background: var(--navy);
+      display: flex; align-items: center; justify-content: space-between;
+      padding: 0 2rem; height: 60px;
+      box-shadow: 0 2px 8px rgba(0,0,0,.3);
+    }
+    .nav-logo { color: #fff; font-weight: 700; font-size: 1.1rem; text-decoration: none; }
+    .nav-logo span { color: var(--yellow); }
+    .nav-links { display: flex; gap: 1.5rem; list-style: none; }
+    .nav-links a { color: #cbd5e0; text-decoration: none; font-size: .9rem; transition: color .2s; }
+    .nav-links a:hover { color: #fff; }
+    .nav-links a.news-link {
+      background: var(--red); color: #fff;
+      padding: .25rem .75rem; border-radius: 999px; font-weight: 600;
+    }
+    .nav-links a.consult-link {
+      background: var(--green); color: #fff;
+      padding: .25rem .75rem; border-radius: 999px; font-weight: 600;
+    }
+    .nav-links a.consult-link:hover { background: #22543d; color: #fff; }
+
+    /* ===== HAMBURGER ===== */
+    .hamburger {
+      display: none;
+      background: none; border: none;
+      color: #fff; font-size: 1.6rem;
+      cursor: pointer; padding: .2rem .4rem;
+      line-height: 1; border-radius: 4px;
+      transition: background .15s;
+    }
+    .hamburger:hover { background: rgba(255,255,255,.12); }
+    .nav-drawer {
+      display: flex; flex-direction: column;
+      position: fixed; top: 60px; right: 0; bottom: 0; z-index: 99;
+      width: 260px; height: auto;
+      padding: 0; align-items: stretch;
+      background: #111;
+      box-shadow: -4px 0 20px rgba(0,0,0,.6);
+      border-left: 3px solid #e53e3e;
+      transform: translateX(110%);
+      transition: transform .25s ease;
+      overflow-y: auto;
+      visibility: hidden;
+    }
+    .nav-drawer.open { transform: translateX(0); visibility: visible; }
+    .nav-drawer a {
+      color: #fff; text-decoration: none;
+      padding: 1rem 1.5rem; font-size: 1rem; font-weight: 600;
+      border-bottom: 1px solid #222;
+      border-left: 3px solid transparent;
+      transition: background .15s;
+      display: flex; align-items: center; gap: .75rem;
+      background: #111; flex-shrink: 0;
+    }
+    .nav-drawer a:hover { background: #1a1a1a; }
+    .nav-drawer a.news-link   { border-left-color: #e53e3e; }
+    .nav-drawer a.checker-link { border-left-color: #2b6cb0; }
+    .nav-drawer a.consult-link { border-left-color: #276749; }
+
+    @media (max-width: 640px) {
+      .hamburger { display: flex; align-items: center; }
+      .nav-links { display: none; }
+    }
+
+    /* ===== PAGE HEADER ===== */
+    .page-header {
+      background: linear-gradient(135deg, var(--navy) 0%, #2c5282 100%);
+      padding: 100px 2rem 3rem;
+      text-align: center;
+    }
+    .page-header h1 {
+      color: #fff;
+      font-size: clamp(1.5rem, 3.5vw, 2.2rem);
+      font-weight: 800;
+    }
+    .page-header p {
+      color: #bee3f8;
+      font-size: .95rem;
+      margin-top: .75rem;
+    }
+
+    /* ===== MAIN ===== */
+    .main {
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 2.5rem 1.5rem 4rem;
+    }
+    .policy-card {
+      background: #fff;
+      border-radius: 16px;
+      border: 1px solid #e2e8f0;
+      padding: 2rem;
+      margin-bottom: 1.5rem;
+      box-shadow: 0 2px 12px rgba(0,0,0,.05);
+    }
+    .policy-card h2 {
+      font-size: 1.05rem;
+      font-weight: 800;
+      color: var(--navy);
+      margin-bottom: 1rem;
+      padding-bottom: .6rem;
+      border-bottom: 2px solid var(--light);
+    }
+    .policy-card p,
+    .policy-card li {
+      font-size: .9rem;
+      color: #4a5568;
+      margin-bottom: .75rem;
+    }
+    .policy-card ul {
+      padding-left: 1.5rem;
+      margin-bottom: .75rem;
+    }
+    .policy-card li { margin-bottom: .4rem; }
+    .policy-meta {
+      font-size: .82rem;
+      color: var(--gray);
+      text-align: right;
+      margin-top: 1rem;
+    }
+
+    /* ===== FOOTER ===== */
+    footer {
+      background: var(--navy); color: #a0aec0;
+      text-align: center; padding: 2rem;
+      font-size: .85rem;
+    }
+    footer strong { color: #fff; }
+    footer a { color: #bee3f8; text-decoration: none; }
+    footer a:hover { text-decoration: underline; }
+  </style>
+</head>
+<body>
+
+<!-- ナビ -->
+<nav>
+  <a class="nav-logo" href="index.html"><span>⚠</span> 投資詐欺防止.jp</a>
+  <button class="hamburger" id="hamburger" aria-label="メニューを開く" aria-expanded="false">☰</button>
+  <ul class="nav-links">
+    <li><a href="index.html">トップ</a></li>
+    <li><a href="checker.html">🔍 業者チェック</a></li>
+    <li><a href="news.html" class="news-link">📰 ニュース</a></li>
+    <li><a href="consultation.html" class="consult-link">💬 有料相談</a></li>
+  </ul>
+</nav>
+
+<div id="nav-drawer" class="nav-drawer" role="navigation" aria-label="モバイルメニュー">
+  <a href="index.html">🏠 トップ</a>
+  <a href="checker.html" class="checker-link">🔍 業者チェック</a>
+  <a href="news.html" class="news-link">📰 ニュース</a>
+  <a href="consultation.html" class="consult-link">💬 有料個別相談</a>
+</div>
+
+<!-- ページヘッダー -->
+<div class="page-header">
+  <h1>プライバシーポリシー</h1>
+  <p>個人情報の取り扱いについて</p>
+</div>
+
+<div class="main">
+
+  <div class="policy-card">
+    <h2>1. 事業者情報</h2>
+    <p>
+      <strong>事業者名：</strong>サンリー合同会社<br>
+      <strong>屋号：</strong>投資詐欺防止相談室<br>
+      <strong>メール：</strong><a href="mailto:thunleegodo@gmail.com" style="color:var(--blue);">thunleegodo@gmail.com</a><br>
+      <strong>電話：</strong>050-1781-6958
+    </p>
+  </div>
+
+  <div class="policy-card">
+    <h2>2. 取得する個人情報</h2>
+    <p>当サイトでは、以下の場面で個人情報を取得することがあります。</p>
+    <ul>
+      <li><b>有料相談のご予約時</b>（Calendly経由）：お名前、メールアドレス、ご予約日時</li>
+      <li><b>お支払い時</b>（Stripe・PayPay・銀行振込）：決済に必要な情報（カード情報はStripe社が管理し、当方では保持しません）</li>
+      <li><b>相談実施時</b>：ご相談内容（投資案件の詳細、業者情報など）</li>
+      <li><b>お問い合わせ時</b>：お名前、メールアドレス、お問い合わせ内容</li>
+    </ul>
+  </div>
+
+  <div class="policy-card">
+    <h2>3. 個人情報の利用目的</h2>
+    <p>取得した個人情報は、以下の目的でのみ利用いたします。</p>
+    <ul>
+      <li>有料相談サービスの提供・予約管理・お支払い確認</li>
+      <li>相談内容に基づく回答・アドバイスの提供</li>
+      <li>サービスに関するご連絡（日程変更・キャンセル対応等）</li>
+      <li>お問い合わせへの回答</li>
+    </ul>
+  </div>
+
+  <div class="policy-card">
+    <h2>4. 個人情報の第三者提供</h2>
+    <p>取得した個人情報は、以下の場合を除き、第三者に提供することはありません。</p>
+    <ul>
+      <li>ご本人の同意がある場合</li>
+      <li>法令に基づく開示要請があった場合</li>
+      <li>人の生命・身体・財産の保護のために必要な場合</li>
+    </ul>
+  </div>
+
+  <div class="policy-card">
+    <h2>5. 外部サービスの利用</h2>
+    <p>当サイトでは、以下の外部サービスを利用しています。各サービスの個人情報の取り扱いについては、各社のプライバシーポリシーをご確認ください。</p>
+    <ul>
+      <li><b>Calendly</b>（予約管理）</li>
+      <li><b>Stripe</b>（クレジットカード決済）</li>
+      <li><b>Cloudflare</b>（ホスティング・CDN）</li>
+      <li><b>Zoom</b>（ビデオ通話による相談実施）</li>
+    </ul>
+  </div>
+
+  <div class="policy-card">
+    <h2>6. 個人情報の管理</h2>
+    <p>取得した個人情報は、不正アクセス・紛失・漏洩等が生じないよう、適切な安全管理措置を講じます。相談終了後、一定期間を経過した情報は適切に削除いたします。</p>
+  </div>
+
+  <div class="policy-card">
+    <h2>7. 個人情報の開示・訂正・削除</h2>
+    <p>ご自身の個人情報の開示・訂正・削除をご希望の場合は、下記のメールアドレスまでご連絡ください。本人確認の上、合理的な範囲で速やかに対応いたします。</p>
+    <p><strong>連絡先：</strong><a href="mailto:thunleegodo@gmail.com" style="color:var(--blue);">thunleegodo@gmail.com</a></p>
+  </div>
+
+  <div class="policy-card">
+    <h2>8. Cookieについて</h2>
+    <p>当サイトでは、外部サービス（Calendly、Stripe、Cloudflare）がCookieを使用する場合があります。ブラウザの設定によりCookieを無効にすることが可能ですが、一部の機能が正常に動作しなくなる場合があります。</p>
+  </div>
+
+  <div class="policy-card">
+    <h2>9. ポリシーの変更</h2>
+    <p>本プライバシーポリシーは、法令の改正やサービス内容の変更に応じて、事前の通知なく改定することがあります。最新の内容は常に本ページに掲載いたします。</p>
+    <div class="policy-meta">
+      制定日：2026年3月9日
+    </div>
+  </div>
+
+</div>
+
+<!-- フッター -->
+<footer>
+  <strong>投資詐欺防止啓発サイト</strong><br>
+  <span style="font-size:.8rem; margin-top:.5rem; display:block;">
+    本サイトは投資詐欺の啓発を目的として作成されたものであり、特定の金融商品・サービスの勧誘を行うものではありません。
+  </span>
+  <span style="font-size:.78rem; margin-top:.75rem; display:block;">
+    <a href="privacy.html">プライバシーポリシー</a> ｜ <a href="consultation.html#tokusho">特定商取引法に基づく表記</a>
+  </span>
+</footer>
+
+<script>
+// ハンバーガーメニュー
+(function() {
+  var btn    = document.getElementById('hamburger');
+  var drawer = document.getElementById('nav-drawer');
+  if (!btn || !drawer) return;
+
+  function closeMenu() {
+    drawer.classList.remove('open');
+    btn.textContent = '☰';
+    btn.setAttribute('aria-expanded', 'false');
+  }
+  function toggleMenu() {
+    var isOpen = drawer.classList.toggle('open');
+    btn.textContent = isOpen ? '✕' : '☰';
+    btn.setAttribute('aria-expanded', isOpen ? 'true' : 'false');
+  }
+
+  btn.addEventListener('click', function(e) {
+    e.stopPropagation();
+    toggleMenu();
+  });
+  document.addEventListener('click', function(e) {
+    if (!drawer.contains(e.target) && e.target !== btn) closeMenu();
+  });
+  document.addEventListener('keydown', function(e) {
+    if (e.key === 'Escape') closeMenu();
+  });
+  drawer.querySelectorAll('a').forEach(function(a) {
+    a.addEventListener('click', closeMenu);
+  });
+})();
+</script>
+</body>
+</html>
