@@ -705,7 +705,7 @@
     <div class="card-title">📅 日時を選んで予約する</div>
 
     <div class="calendly-notice">
-      ⚠ <b>予約だけでは相談は確定しません。</b>予約完了後に届くメールに記載のお支払い方法（クレジットカード・銀行振込・PayPay）にて、相談日の前日までにお支払いください。入金確認後、Zoom／電話のリンクをお送りして相談確定となります。
+      ⚠ <b>予約だけでは相談は確定しません。</b>予約完了後に届くメールに記載のお支払い方法（クレジットカード・PayPay・銀行振込）にて、相談日の前日までにお支払いください。（StripeリンクよりPayPay払いも可能です）入金確認後、Zoom／電話のリンクをお送りして相談確定となります。
     </div>
 
     <iframe class="calendly-frame"
@@ -722,23 +722,17 @@
     </p>
     <div class="payment-info">
       <div class="payment-method">
+        <div class="pm-icon">💳</div>
+        <h4>クレジットカード・PayPay（Stripe）</h4>
+        <p>Visa / Mastercard / AMEX / PayPay 対応</p>
+        <a href="https://buy.stripe.com/8x25kC6hXdwG5uiaMH9k401" target="_blank" rel="noopener"
+           style="display:inline-block;margin-top:.5rem;background:var(--green);color:#fff;padding:.4rem 1rem;border-radius:8px;font-size:.8rem;font-weight:700;text-decoration:none;transition:background .2s;">今すぐ支払う</a>
+      </div>
+      <div class="payment-method">
         <div class="pm-icon">🏦</div>
         <h4>銀行振込</h4>
         <p>ご予約後にお伝えする口座へお振込みください</p>
         <div class="payment-badge">手数料無料</div>
-      </div>
-      <div class="payment-method">
-        <div class="pm-icon">📱</div>
-        <h4>PayPay</h4>
-        <p>QRコードまたは送金リンクでお支払い</p>
-        <div class="payment-badge">即時確認</div>
-      </div>
-      <div class="payment-method">
-        <div class="pm-icon">💳</div>
-        <h4>クレジットカード</h4>
-        <p>Visa / Mastercard / AMEX 等対応</p>
-        <a href="https://buy.stripe.com/8x25kC6hXdwG5uiaMH9k401" target="_blank" rel="noopener"
-           style="display:inline-block;margin-top:.5rem;background:var(--green);color:#fff;padding:.4rem 1rem;border-radius:8px;font-size:.8rem;font-weight:700;text-decoration:none;transition:background .2s;">カードで支払う</a>
       </div>
     </div>
   </div>
@@ -830,7 +824,7 @@
       </tr>
       <tr>
         <th>支払方法</th>
-        <td>クレジットカード（Stripe決済）・PayPay・銀行振込</td>
+        <td>クレジットカード・PayPay（Stripe決済）・銀行振込</td>
       </tr>
       <tr>
         <th>支払時期</th>
