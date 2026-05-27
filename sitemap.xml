@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:news="http://www.google.com/schemas/sitemap-news/0.9">
   <url>
     <loc>https://sagihantei.com/</loc>
-    <lastmod>2026-03-09</lastmod>
+    <lastmod>2026-05-27</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
@@ -14,15 +15,98 @@
   </url>
   <url>
     <loc>https://sagihantei.com/checker</loc>
-    <lastmod>2026-03-09</lastmod>
+    <lastmod>2026-04-15</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://sagihantei.com/news</loc>
-    <lastmod>2026-03-09</lastmod>
+    <lastmod>2026-05-27</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
+    <priority>0.9</priority>
+    <news:news>
+      <news:publication>
+        <news:name>詐欺判定.com</news:name>
+        <news:language>ja</news:language>
+      </news:publication>
+      <news:publication_date>2026-05-27</news:publication_date>
+      <news:title>2026年最新の投資詐欺ニュースまとめ</news:title>
+    </news:news>
+  </url>
+  <url>
+    <loc>https://sagihantei.com/news/global-investment-lab-2026-05</loc>
+    <lastmod>2026-05-27</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+    <news:news>
+      <news:publication>
+        <news:name>詐欺判定.com</news:name>
+        <news:language>ja</news:language>
+      </news:publication>
+      <news:publication_date>2026-05-14</news:publication_date>
+      <news:title>Global Investment Lab事件 — 約7,300人から870億円を違法集金、警視庁が6人逮捕</news:title>
+      <news:keywords>Global Investment Lab, スターリング・ハウス・トラスト, ポンジスキーム, 投資詐欺逮捕, 870億円</news:keywords>
+    </news:news>
+  </url>
+  <url>
+    <loc>https://sagihantei.com/news/aichi-87oku-2026-05</loc>
+    <lastmod>2026-05-27</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+    <news:news>
+      <news:publication>
+        <news:name>詐欺判定.com</news:name>
+        <news:language>ja</news:language>
+      </news:publication>
+      <news:publication_date>2026-05-20</news:publication_date>
+      <news:title>愛知80代男性、SNS投資詐欺で8億7,000万円被害 — 県内特殊詐欺の過去最高額</news:title>
+      <news:keywords>SNS型投資詐欺, なりすまし広告, LINE誘導, 偽投資アプリ, 愛知 投資詐欺</news:keywords>
+    </news:news>
+  </url>
+  <url>
+    <loc>https://sagihantei.com/news/pig-butchering-takedown-2026-05</loc>
+    <lastmod>2026-05-27</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+    <news:news>
+      <news:publication>
+        <news:name>詐欺判定.com</news:name>
+        <news:language>ja</news:language>
+      </news:publication>
+      <news:publication_date>2026-05-15</news:publication_date>
+      <news:title>米司法省など国際合同作戦、ピッグブッチャリング詐欺拠点9カ所を一斉摘発 — 276人逮捕</news:title>
+      <news:keywords>ピッグブッチャリング, 米司法省, FBI, 暗号資産詐欺, 国際摘発</news:keywords>
+    </news:news>
+  </url>
+  <url>
+    <loc>https://sagihantei.com/news/sanae-token-2026-03</loc>
+    <lastmod>2026-05-27</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <news:news>
+      <news:publication>
+        <news:name>詐欺判定.com</news:name>
+        <news:language>ja</news:language>
+      </news:publication>
+      <news:publication_date>2026-03-02</news:publication_date>
+      <news:title>首相名を冠した暗号資産「SANAE TOKEN」事件 — 本人が関与全面否定、金融庁が実態確認</news:title>
+      <news:keywords>SANAE TOKEN, 高市首相, 金融庁, 暗号資産詐欺, ミームコイン詐欺</news:keywords>
+    </news:news>
+  </url>
+  <url>
+    <loc>https://sagihantei.com/news/prince-group-2026-01</loc>
+    <lastmod>2026-05-27</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+    <news:news>
+      <news:publication>
+        <news:name>詐欺判定.com</news:name>
+        <news:language>ja</news:language>
+      </news:publication>
+      <news:publication_date>2026-01-07</news:publication_date>
+      <news:title>カンボジア「プリンスグループ」陳志会長を逮捕・中国送還 — 米司法省が150億ドル没収訴訟</news:title>
+      <news:keywords>プリンスグループ, 陳志, 太子集団, ピッグブッチャリング, 米司法省, OFAC</news:keywords>
+    </news:news>
   </url>
   <url>
     <loc>https://sagihantei.com/tokushoho</loc>

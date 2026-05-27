@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0"
+     xmlns:atom="http://www.w3.org/2005/Atom"
+     xmlns:dc="http://purl.org/dc/elements/1.1/"
+     xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>投資詐欺ニュース | 詐欺判定.com</title>
+    <link>https://sagihantei.com/news</link>
+    <atom:link href="https://sagihantei.com/feed.xml" rel="self" type="application/rss+xml" />
+    <description>2024〜2026年の投資詐欺最新事案・摘発情報・被害統計・法規制を毎月更新。SNS型投資詐欺・暗号資産詐欺・ロマンス詐欺・ポンジスキーム・なりすまし広告の被害事例と対策を網羅。</description>
+    <language>ja</language>
+    <lastBuildDate>Wed, 27 May 2026 00:00:00 +0900</lastBuildDate>
+    <pubDate>Wed, 27 May 2026 00:00:00 +0900</pubDate>
+    <copyright>© 投資詐欺防止相談室（サンリー合同会社）</copyright>
+    <category>News</category>
+    <category>Crime</category>
+    <ttl>1440</ttl>
+    <image>
+      <url>https://sagihantei.com/og-image.png</url>
+      <title>投資詐欺ニュース | 詐欺判定.com</title>
+      <link>https://sagihantei.com/</link>
+      <width>1200</width>
+      <height>630</height>
+    </image>
+    <managingEditor>noreply@sagihantei.com (投資詐欺防止相談室)</managingEditor>
+
+    <item>
+      <title>愛知80代男性、SNS投資詐欺で8億7,000万円被害 — 県内特殊詐欺の過去最高額</title>
+      <link>https://sagihantei.com/news/aichi-87oku-2026-05</link>
+      <description><![CDATA[愛知県警は2026年5月、80代男性が著名人なりすまし広告→LINE誘導→偽投資アプリの典型手口で約8億7,000万円を騙し取られたと発表。愛知県内で確認された特殊詐欺としては過去最高額。出金時に「税金・手数料が必要」と追加要求され不審に思い相談、発覚した。]]></description>
+      <pubDate>Wed, 20 May 2026 00:00:00 +0900</pubDate>
+      <guid isPermaLink="true">https://sagihantei.com/news/aichi-87oku-2026-05</guid>
+      <category>SNS型投資詐欺</category>
+      <dc:creator>投資詐欺防止相談室</dc:creator>
+    </item>
+
+    <item>
+      <title>米司法省など国際合同作戦、ピッグブッチャリング詐欺拠点9カ所を一斉摘発 — 276人逮捕、7億100万ドル押収</title>
+      <link>https://sagihantei.com/news/pig-butchering-takedown-2026-05</link>
+      <description><![CDATA[米司法省・FBI・IRS・ドバイ警察・中国公安省は2026年5月、SNSで信頼関係を構築した後に偽暗号資産プラットフォームへ投資させ出金不能にする「ピッグブッチャリング詐欺」の拠点9カ所を国際合同摘発。少なくとも276人を逮捕、暗号資産7億100万ドル（約1,050億円）を押収した。]]></description>
+      <pubDate>Fri, 15 May 2026 00:00:00 +0900</pubDate>
+      <guid isPermaLink="true">https://sagihantei.com/news/pig-butchering-takedown-2026-05</guid>
+      <category>仮想通貨</category>
+      <dc:creator>投資詐欺防止相談室</dc:creator>
+    </item>
+
+    <item>
+      <title>SESC、匠投資顧問に行政処分勧告 — 投資一任契約資金8,000万円を他顧客の償還金に流用</title>
+      <link>https://sagihantei.com/news#takumi-2026</link>
+      <description><![CDATA[証券取引等監視委員会は2026年5月15日、匠投資顧問への行政処分を勧告。投資一任契約4顧客の資金8,000万円を約定どおり運用せず、既存顧客への償還金支払いに流用していたことが判明。投資先医療法人から2億500万円の私的流出、無登録海外金融商品を39名に勧誘するなど複数の金商法違反が認定された。]]></description>
+      <pubDate>Fri, 15 May 2026 00:00:00 +0900</pubDate>
+      <guid isPermaLink="false">sagihantei-news-34-takumi-2026-05</guid>
+      <category>未公開株・社債</category>
+      <dc:creator>投資詐欺防止相談室</dc:creator>
+    </item>
+
+    <item>
+      <title>Global Investment Lab事件 — 約7,300人から870億円を違法集金、警視庁が6人逮捕</title>
+      <link>https://sagihantei.com/news/global-investment-lab-2026-05</link>
+      <description><![CDATA[警視庁は2026年5月14日、英領BVI籍「スターリング・ハウス・トラスト」への出資を無登録で勧誘したとして、Global Investment Lab株式会社の実質的経営者・大坂洋治容疑者ら6人を金融商品取引法違反容疑で逮捕。2014年8月以降の約10年間で全国約7,300人から約870億円を集金。「元本保証・年12%」を謳い、約1,000人のマルチ商法的ピラミッドで勧誘していた。]]></description>
+      <pubDate>Thu, 14 May 2026 00:00:00 +0900</pubDate>
+      <guid isPermaLink="true">https://sagihantei.com/news/global-investment-lab-2026-05</guid>
+      <category>ポンジ・スキーム</category>
+      <dc:creator>投資詐欺防止相談室</dc:creator>
+    </item>
+
+    <item>
+      <title>北九州市69歳男性、SNS投資詐欺で2カ月29回振込・1億44万円被害 — 役割分担型の組織的手口</title>
+      <link>https://sagihantei.com/news#kitakyushu-2026</link>
+      <description><![CDATA[北九州市若松区の69歳自営業男性が、SNS経由の詐欺グループに2026年2月4日から4月7日の約2カ月間で29回振込、計1億44万1,582円を騙し取られた。グループは「投資家の先生」「アシスタント」「カスタマーサポート」と役割分担で組織的に運営。出金を試みた段階で発覚した。]]></description>
+      <pubDate>Thu, 23 Apr 2026 00:00:00 +0900</pubDate>
+      <guid isPermaLink="false">sagihantei-news-35-kitakyushu-2026-04</guid>
+      <category>SNS型投資詐欺</category>
+      <dc:creator>投資詐欺防止相談室</dc:creator>
+    </item>
+
+    <item>
+      <title>首相名を冠した暗号資産「SANAE TOKEN」事件 — 本人が関与全面否定、金融庁が実態確認</title>
+      <link>https://sagihantei.com/news/sanae-token-2026-03</link>
+      <description><![CDATA[高市早苗首相の名を冠した暗号資産「SANAE TOKEN」が、No Border DAO（発起人：溝口勇児CEO）により発行され時価総額25億円まで急騰。2026年3月2日、高市首相がXで「全く知らない、承認したことはない」と関与を全面否定し価格暴落。金融庁は無登録暗号資産交換業の可能性で実態確認、「政府公認」を騙る暗号資産詐欺への注意喚起を更新した。]]></description>
+      <pubDate>Mon, 02 Mar 2026 00:00:00 +0900</pubDate>
+      <guid isPermaLink="true">https://sagihantei.com/news/sanae-token-2026-03</guid>
+      <category>仮想通貨</category>
+      <dc:creator>投資詐欺防止相談室</dc:creator>
+    </item>
+
+    <item>
+      <title>警察庁、2025年（令和7年）被害確定値を発表 — 特殊詐欺＋SNS型投資・ロマンス詐欺で3,241億円</title>
+      <link>https://sagihantei.com/news#npa-2025-confirmed</link>
+      <description><![CDATA[警察庁は2026年2月12日、2025年の特殊詐欺＋SNS型投資・ロマンス詐欺の被害額確定値を3,241.1億円と発表、過去最悪を大幅更新。SNS型投資詐欺の認知件数は9,538件（前年比+48.7%）、被害額1,274.7億円（同+46.3%）。ニセ警察官・ニセ検察詐欺の認知件数は10,696件、被害額985.4億円。]]></description>
+      <pubDate>Thu, 12 Feb 2026 00:00:00 +0900</pubDate>
+      <guid isPermaLink="false">sagihantei-news-33-npa-2025-confirmed</guid>
+      <category>法規制・対策</category>
+      <dc:creator>投資詐欺防止相談室</dc:creator>
+    </item>
+
+    <item>
+      <title>SNS型投資詐欺、被害額1兆円超の推計 — AI偽広告と巧妙な誘導手口が深刻化</title>
+      <link>https://sagihantei.com/news#sns-1trillion-2026</link>
+      <description><![CDATA[2025年のオンライン詐欺被害額は1兆円を突破したと推計された。AIで生成したディープフェイク動画で著名人が投資を推奨するかのように見せかける偽広告がSNS上に氾濫し、被害規模は過去最悪を更新し続けている。]]></description>
+      <pubDate>Sun, 01 Feb 2026 00:00:00 +0900</pubDate>
+      <guid isPermaLink="false">sagihantei-news-17-sns-1trillion-2026-02</guid>
+      <category>SNS型投資詐欺</category>
+      <dc:creator>投資詐欺防止相談室</dc:creator>
+    </item>
+
+    <item>
+      <title>2025年の暗号資産詐欺被害額は推定170億ドル、AI悪用詐欺が前年比1,400%増</title>
+      <link>https://sagihantei.com/news#chainalysis-2026</link>
+      <description><![CDATA[ブロックチェーン分析企業Chainalysisの報告によると、2025年の暗号資産関連詐欺の被害額は推定170億ドル（約2兆7,000億円）に達した。特にAI技術を悪用したなりすまし詐欺が前年比1,400%増と異例の急増を記録し、1件あたりの平均被害額はAI非関連の詐欺の4.5倍に上る。]]></description>
+      <pubDate>Wed, 14 Jan 2026 00:00:00 +0900</pubDate>
+      <guid isPermaLink="false">sagihantei-news-18-chainalysis-2026-01</guid>
+      <category>仮想通貨</category>
+      <dc:creator>投資詐欺防止相談室</dc:creator>
+    </item>
+
+    <item>
+      <title>カンボジア「プリンスグループ（太子集団）」陳志会長を逮捕・中国送還 — 米司法省が150億ドル没収訴訟</title>
+      <link>https://sagihantei.com/news/prince-group-2026-01</link>
+      <description><![CDATA[2026年1月7日、カンボジア内務省は最大級の詐欺複合施設を運営する「プリンスグループ（太子集団）」会長の陳志を逮捕、国籍剥奪のうえ中国に送還した。同グループは10カ所以上の拠点で強制労働者を使った世界規模のピッグブッチャリング詐欺を展開。米司法省は約127,271BTC（約150億ドル相当）の没収民事訴訟を提起、司法省史上最大規模。]]></description>
+      <pubDate>Wed, 07 Jan 2026 00:00:00 +0900</pubDate>
+      <guid isPermaLink="true">https://sagihantei.com/news/prince-group-2026-01</guid>
+      <category>ポンジ・スキーム</category>
+      <dc:creator>投資詐欺防止相談室</dc:creator>
+    </item>
+
+    <item>
+      <title>ディープフェイク規制の動き加速 — EU規制は域外適用で日本企業も対象に</title>
+      <link>https://sagihantei.com/news#deepfake-eu-2025-12</link>
+      <description><![CDATA[EUはディープフェイク生成AIに透明性義務を課す規制を施行し、違反時の罰金は最大1,500万ユーロ（約24億円）。域外適用されるため日本企業も対象となる可能性がある。一方、日本国内ではディープフェイクを直接規制する法律はまだ存在せず、法整備の遅れが指摘されている。]]></description>
+      <pubDate>Mon, 01 Dec 2025 00:00:00 +0900</pubDate>
+      <guid isPermaLink="false">sagihantei-news-26-deepfake-eu-2025-12</guid>
+      <category>法規制・対策</category>
+      <dc:creator>投資詐欺防止相談室</dc:creator>
+    </item>
+
+    <item>
+      <title>2025年上半期の特殊詐欺被害額が2024年通年を上回るペース、過去最悪を更新中</title>
+      <link>https://sagihantei.com/news#npa-2025h1</link>
+      <description><![CDATA[警察庁の発表によると、2025年10月末時点でSNS型投資・ロマンス詐欺の被害額は1,370.8億円に達し、2024年通年の被害額（1,271.9億円）を既に超過。認知件数・被害額ともに統計開始以来の最多を更新し続けている。]]></description>
+      <pubDate>Fri, 31 Oct 2025 00:00:00 +0900</pubDate>
+      <guid isPermaLink="false">sagihantei-news-19-npa-2025h1</guid>
+      <category>SNS型投資詐欺</category>
+      <dc:creator>投資詐欺防止相談室</dc:creator>
+    </item>
+
+    <item>
+      <title>東京地裁、Global Investment Lab役員3名に金商法違反の禁止・停止命令</title>
+      <link>https://sagihantei.com/news/global-investment-lab-2026-05</link>
+      <description><![CDATA[東京地方裁判所は2024年10月31日、Global Investment Lab株式会社の役員等3名に対し、無登録での金融商品取引業（海外ファンド「スターリング・ハウス・トラスト」の勧誘）の禁止・停止命令を発令。SESCが同年6月に申立てたもので、「元本保証・月利1%」勧誘の実態、解約引き留め営業手法が認定された。本件は2026年5月の同社役員ら6人逮捕の伏線となった。]]></description>
+      <pubDate>Thu, 31 Oct 2024 00:00:00 +0900</pubDate>
+      <guid isPermaLink="false">sagihantei-news-28-gil-court-order-2024</guid>
+      <category>法規制・対策</category>
+      <dc:creator>投資詐欺防止相談室</dc:creator>
+    </item>
+
+  </channel>
+</rss>

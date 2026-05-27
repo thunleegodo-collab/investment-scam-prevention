@@ -20,7 +20,7 @@
   <meta name="robots" content="index, follow, max-image-preview:large">
   <meta http-equiv="content-language" content="ja-JP">
   <link rel="canonical" href="https://sagihantei.com/news">
-  <link rel="alternate" type="application/rss+xml" title="投資詐欺ニュース | 詐欺判定.com" href="https://sagihantei.com/news">
+  <link rel="alternate" type="application/rss+xml" title="投資詐欺ニュース | 詐欺判定.com" href="https://sagihantei.com/feed.xml">
   <!-- OGP -->
   <meta property="og:title" content="【2026年最新】投資詐欺ニュース速報・摘発事例まとめ | 詐欺判定.com">
   <meta property="og:description" content="Global Investment Lab 870億円事件、SANAE TOKEN問題、ピッグブッチャリング国際摘発276人逮捕など、2026年の投資詐欺最新事案を網羅。2025年被害額3,241億円、SNS型投資詐欺は前年比+46%急増。">
@@ -335,6 +335,8 @@
       cursor: default;
     }
     .news-card:hover { box-shadow: 0 6px 20px rgba(0,0,0,.08); border-color: #bee3f8; }
+    .news-card.has-detail h2 a:hover { color: var(--blue) !important; text-decoration: underline; }
+    .news-card.has-detail { border-left: 3px solid var(--red); }
 
     .card-top {
       display: flex; align-items: center; gap: .6rem;
@@ -672,6 +674,7 @@ const news = [
     impact: "high",
     impactLabel: "重要",
     searchQuery: "愛知 80代 SNS投資詐欺 8億7000万円 2026 偽投資アプリ",
+    detailUrl: "news/aichi-87oku-2026-05.html",
   },
   {
     id: 30,
@@ -684,6 +687,7 @@ const news = [
     impact: "high",
     impactLabel: "重要",
     searchQuery: "ピッグブッチャリング 国際摘発 米司法省 276人逮捕 2026",
+    detailUrl: "news/pig-butchering-takedown-2026-05.html",
   },
   {
     id: 31,
@@ -696,6 +700,7 @@ const news = [
     impact: "high",
     impactLabel: "重要",
     searchQuery: "SANAE TOKEN 高市首相 金融庁 暗号資産 2026",
+    detailUrl: "news/sanae-token-2026-03.html",
   },
   {
     id: 32,
@@ -708,6 +713,7 @@ const news = [
     impact: "high",
     impactLabel: "重要",
     searchQuery: "プリンスグループ 陳志 太子集団 ピッグブッチャリング 150億ドル 2026",
+    detailUrl: "news/prince-group-2026-01.html",
   },
   {
     id: 33,
@@ -756,6 +762,7 @@ const news = [
     impact: "high",
     impactLabel: "重要",
     searchQuery: "グローバルインベストメントラボ 870億円 逮捕 2026 スターリングハウストラスト",
+    detailUrl: "news/global-investment-lab-2026-05.html",
   },
   {
     id: 28,
@@ -1135,23 +1142,32 @@ function render() {
   }
   empty.style.display = "none";
 
-  container.innerHTML = list.map(n => `
-    <div class="news-card">
+  container.innerHTML = list.map(n => {
+    const titleHtml = n.detailUrl
+      ? `<h2><a href="${n.detailUrl}" style="color:inherit;text-decoration:none;">${n.title}</a></h2>`
+      : `<h2>${n.title}</h2>`;
+    const detailLink = n.detailUrl
+      ? `<a class="search-link" href="${n.detailUrl}" style="color:#c53030;font-weight:700;">詳細を読む →</a>`
+      : "";
+    return `
+    <div class="news-card${n.detailUrl ? ' has-detail' : ''}">
       <div class="card-top">
         <span class="cat-badge ${catColors[n.cat]}">${n.catLabel}</span>
         <span class="news-source">${n.source}</span>
         <span class="news-date">${formatDate(n.date)}</span>
       </div>
-      <h2>${n.title}</h2>
+      ${titleHtml}
       <p>${n.body}</p>
       <div class="card-footer">
         <span class="impact-badge ${impactColors[n.impact]}">${n.impactLabel}</span>
+        ${detailLink}
         <a class="search-link" href="${googleNewsUrl(n.searchQuery)}" target="_blank" rel="noopener">
           関連ニュースを検索 ↗
         </a>
       </div>
     </div>
-  `).join("");
+  `;
+  }).join("");
 }
 
 // フィルターボタン
