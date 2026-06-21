@@ -3,7 +3,7 @@
         xmlns:news="http://www.google.com/schemas/sitemap-news/0.9">
   <url>
     <loc>https://sagihantei.com/</loc>
-    <lastmod>2026-05-27</lastmod>
+    <lastmod>2026-06-21</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
@@ -21,7 +21,7 @@
   </url>
   <url>
     <loc>https://sagihantei.com/news</loc>
-    <lastmod>2026-05-27</lastmod>
+    <lastmod>2026-06-21</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
     <news:news>
@@ -29,8 +29,23 @@
         <news:name>詐欺判定.com</news:name>
         <news:language>ja</news:language>
       </news:publication>
-      <news:publication_date>2026-05-27</news:publication_date>
+      <news:publication_date>2026-06-21</news:publication_date>
       <news:title>2026年最新の投資詐欺ニュースまとめ</news:title>
+    </news:news>
+  </url>
+  <url>
+    <loc>https://sagihantei.com/news/keisatsucho-2026-04-sokuhou</loc>
+    <lastmod>2026-06-21</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+    <news:news>
+      <news:publication>
+        <news:name>詐欺判定.com</news:name>
+        <news:language>ja</news:language>
+      </news:publication>
+      <news:publication_date>2026-06-05</news:publication_date>
+      <news:title>警察庁 令和8年4月末暫定値 — 4カ月で被害1,260億円、SNS型投資詐欺592.5億円で最悪ペース継続</news:title>
+      <news:keywords>警察庁 暫定値, SNS型投資詐欺, 特殊詐欺統計, 令和8年4月末, 投資詐欺 2026</news:keywords>
     </news:news>
   </url>
   <url>

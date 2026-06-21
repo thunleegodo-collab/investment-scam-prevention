@@ -9,8 +9,8 @@
     <atom:link href="https://sagihantei.com/feed.xml" rel="self" type="application/rss+xml" />
     <description>2024〜2026年の投資詐欺最新事案・摘発情報・被害統計・法規制を毎月更新。SNS型投資詐欺・暗号資産詐欺・ロマンス詐欺・ポンジスキーム・なりすまし広告の被害事例と対策を網羅。</description>
     <language>ja</language>
-    <lastBuildDate>Wed, 27 May 2026 00:00:00 +0900</lastBuildDate>
-    <pubDate>Wed, 27 May 2026 00:00:00 +0900</pubDate>
+    <lastBuildDate>Sun, 21 Jun 2026 00:00:00 +0900</lastBuildDate>
+    <pubDate>Sun, 21 Jun 2026 00:00:00 +0900</pubDate>
     <copyright>© 投資詐欺防止相談室（サンリー合同会社）</copyright>
     <category>News</category>
     <category>Crime</category>
@@ -23,6 +23,26 @@
       <height>630</height>
     </image>
     <managingEditor>noreply@sagihantei.com (投資詐欺防止相談室)</managingEditor>
+
+    <item>
+      <title>警察庁 令和8年4月末暫定値 — 4カ月で被害1,260億円、SNS型投資詐欺592.5億円で最悪ペース継続</title>
+      <link>https://sagihantei.com/news/keisatsucho-2026-04-sokuhou</link>
+      <description><![CDATA[警察庁は2026年6月5日、令和8年（2026年）1〜4月末の暫定値を公表。4カ月間で特殊詐欺＋SNS型詐欺の被害は1,260.0億円（前年同期比＋517.9億円）。SNS型投資詐欺は認知4,381件・被害592.5億円（同＋401.1億円）で件数・被害額ともに過去最悪ペース。SNS広告→LINE→偽アプリ→出金時の追加要求という共通手口と家庭でできる予防策を解説。]]></description>
+      <pubDate>Fri, 05 Jun 2026 00:00:00 +0900</pubDate>
+      <guid isPermaLink="true">https://sagihantei.com/news/keisatsucho-2026-04-sokuhou</guid>
+      <category>法規制・対策</category>
+      <dc:creator>投資詐欺防止相談室</dc:creator>
+    </item>
+
+    <item>
+      <title>医療系スタートアップ「MTU」元社長を逮捕 — 売上を偽り自社株を16.3億円で売却、PEファンドから16億円詐取容疑</title>
+      <link>https://sagihantei.com/news#mtu-2026</link>
+      <description><![CDATA[警視庁は2026年5月、医療系スタートアップMTUの元社長・原拓也容疑者（36）を詐欺容疑で逮捕。投資ファンド「J-STAR」に医療機関向けサービスで約8億円の売上があると偽り、自社株約1万株を約16億3,000万円で買い取らせた疑い。実際は主力サービスの導入実績ゼロ・売上0円とされ、自身のテレビ出演映像で信用させたとされる。投資のプロでも粉飾を見抜けなかった事例。]]></description>
+      <pubDate>Fri, 01 May 2026 00:00:00 +0900</pubDate>
+      <guid isPermaLink="false">sagihantei-news-36-mtu-2026-05</guid>
+      <category>未公開株・社債</category>
+      <dc:creator>投資詐欺防止相談室</dc:creator>
+    </item>
 
     <item>
       <title>愛知80代男性、SNS投資詐欺で8億7,000万円被害 — 県内特殊詐欺の過去最高額</title>
