@@ -9,8 +9,8 @@
     <atom:link href="https://sagihantei.com/feed.xml" rel="self" type="application/rss+xml" />
     <description>2024〜2026年の投資詐欺最新事案・摘発情報・被害統計・法規制を毎月更新。SNS型投資詐欺・暗号資産詐欺・ロマンス詐欺・ポンジスキーム・なりすまし広告の被害事例と対策を網羅。</description>
     <language>ja</language>
-    <lastBuildDate>Sun, 21 Jun 2026 00:00:00 +0900</lastBuildDate>
-    <pubDate>Sun, 21 Jun 2026 00:00:00 +0900</pubDate>
+    <lastBuildDate>Fri, 04 Jul 2026 00:00:00 +0900</lastBuildDate>
+    <pubDate>Fri, 04 Jul 2026 00:00:00 +0900</pubDate>
     <copyright>© 投資詐欺防止相談室（サンリー合同会社）</copyright>
     <category>News</category>
     <category>Crime</category>
@@ -23,6 +23,16 @@
       <height>630</height>
     </image>
     <managingEditor>noreply@sagihantei.com (投資詐欺防止相談室)</managingEditor>
+
+    <item>
+      <title>警察庁 令和8年5月末暫定値 — 5カ月で被害1,650億円超、SNS型投資詐欺760億円で過去最悪ペース継続</title>
+      <link>https://sagihantei.com/news/keisatsucho-2026-05-sokuhou</link>
+      <description><![CDATA[警察庁は2026年6月5日、令和8年（2026年）1〜5月末の暫定値を公表。5カ月間で特殊詐欺＋SNS型詐欺の被害は1,650.0億円（前年同期比＋700億円）。SNS型投資詐欺は認知5,200件・被害760.0億円（同＋500億円）で過去最悪ペース継続。ほったらかし投資・ロマンス詐欺との融合・仮想通貨ステーキング偽話など新しい手口を解説。金融庁×警察庁の連携強化策と家庭でできる対策を掲載。]]></description>
+      <pubDate>Fri, 05 Jun 2026 00:00:00 +0900</pubDate>
+      <guid isPermaLink="true">https://sagihantei.com/news/keisatsucho-2026-05-sokuhou</guid>
+      <category>法規制・対策</category>
+      <dc:creator>投資詐欺防止相談室</dc:creator>
+    </item>
 
     <item>
       <title>警察庁 令和8年4月末暫定値 — 4カ月で被害1,260億円、SNS型投資詐欺592.5億円で最悪ペース継続</title>
