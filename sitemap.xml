@@ -3,7 +3,7 @@
         xmlns:news="http://www.google.com/schemas/sitemap-news/0.9">
   <url>
     <loc>https://sagihantei.com/</loc>
-    <lastmod>2026-06-21</lastmod>
+    <lastmod>2026-07-25</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
@@ -21,7 +21,7 @@
   </url>
   <url>
     <loc>https://sagihantei.com/news</loc>
-    <lastmod>2026-06-21</lastmod>
+    <lastmod>2026-07-25</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
     <news:news>
@@ -29,8 +29,68 @@
         <news:name>詐欺判定.com</news:name>
         <news:language>ja</news:language>
       </news:publication>
-      <news:publication_date>2026-06-21</news:publication_date>
+      <news:publication_date>2026-07-25</news:publication_date>
       <news:title>2026年最新の投資詐欺ニュースまとめ</news:title>
+    </news:news>
+  </url>
+  <url>
+    <loc>https://sagihantei.com/news/kensaku-osen-2026-07</loc>
+    <lastmod>2026-07-25</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+    <news:news>
+      <news:publication>
+        <news:name>詐欺判定.com</news:name>
+        <news:language>ja</news:language>
+      </news:publication>
+      <news:publication_date>2026-07-17</news:publication_date>
+      <news:title>【新手口】検索結果を汚染して「◯◯は詐欺ではありません」と表示させる — 警視庁が「サイト内検索スパム」に注意喚起</news:title>
+      <news:keywords>サイト内検索スパム, 検索結果 汚染, 投資詐欺 手口, 警視庁 注意喚起, 高リターン創出計画</news:keywords>
+    </news:news>
+  </url>
+  <url>
+    <loc>https://sagihantei.com/news/kinsho-kaisei-2026-07</loc>
+    <lastmod>2026-07-25</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+    <news:news>
+      <news:publication>
+        <news:name>詐欺判定.com</news:name>
+        <news:language>ja</news:language>
+      </news:publication>
+      <news:publication_date>2026-07-15</news:publication_date>
+      <news:title>金商法・資金決済法の改正が成立 — 無登録営業の罰則は拘禁刑10年、投資インフルエンサーのステマ規制も新設</news:title>
+      <news:keywords>金融商品取引法改正 2026, 暗号資産 金商法, 無登録営業 罰則, ステマ規制, 暗号資産 インサイダー</news:keywords>
+    </news:news>
+  </url>
+  <url>
+    <loc>https://sagihantei.com/news/deepfake-600-2026-07</loc>
+    <lastmod>2026-07-25</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+    <news:news>
+      <news:publication>
+        <news:name>詐欺判定.com</news:name>
+        <news:language>ja</news:language>
+      </news:publication>
+      <news:publication_date>2026-07-14</news:publication_date>
+      <news:title>経済評論家のAI生成動画で「600%の利益を保証」 — 台湾籍の受け子2人を逮捕、80代女性の被害は計9,500万円</news:title>
+      <news:keywords>ディープフェイク 投資詐欺, AI生成動画, なりすまし広告, 受け子 逮捕, 9500万円</news:keywords>
+    </news:news>
+  </url>
+  <url>
+    <loc>https://sagihantei.com/news/keisatsucho-2026-05-sokuhou</loc>
+    <lastmod>2026-07-25</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+    <news:news>
+      <news:publication>
+        <news:name>詐欺判定.com</news:name>
+        <news:language>ja</news:language>
+      </news:publication>
+      <news:publication_date>2026-07-03</news:publication_date>
+      <news:title>警察庁 令和8年5月末暫定値 — 5カ月で特殊詐欺の被害1,514.7億円、SNS型投資詐欺700.4億円で前年同期の約2.6倍</news:title>
+      <news:keywords>警察庁 暫定値, SNS型投資詐欺, 特殊詐欺統計, 令和8年5月末, 投資詐欺 2026</news:keywords>
     </news:news>
   </url>
   <url>
