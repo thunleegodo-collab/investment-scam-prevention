@@ -9,7 +9,7 @@
 - GA4: G-Q23L93PYLM
 
 ## 重要ファイル
-- tokushoho.html（特商法ページ、Stripe審査に影響するため慎重に編集）
+- tokushoho.html（特商法ページ）
 - index.html
 
 ## 過去の主な対応
