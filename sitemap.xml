@@ -3,7 +3,7 @@
         xmlns:news="http://www.google.com/schemas/sitemap-news/0.9">
   <url>
     <loc>https://sagihantei.com/</loc>
-    <lastmod>2026-07-25</lastmod>
+    <lastmod>2026-07-26</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
@@ -21,7 +21,7 @@
   </url>
   <url>
     <loc>https://sagihantei.com/news</loc>
-    <lastmod>2026-07-25</lastmod>
+    <lastmod>2026-07-26</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
     <news:news>
@@ -29,8 +29,23 @@
         <news:name>詐欺判定.com</news:name>
         <news:language>ja</news:language>
       </news:publication>
-      <news:publication_date>2026-07-25</news:publication_date>
+      <news:publication_date>2026-07-26</news:publication_date>
       <news:title>2026年最新の投資詐欺ニュースまとめ</news:title>
+    </news:news>
+  </url>
+  <url>
+    <loc>https://sagihantei.com/news/prince-group-hu-2026-06</loc>
+    <lastmod>2026-07-26</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+    <news:news>
+      <news:publication>
+        <news:name>詐欺判定.com</news:name>
+        <news:language>ja</news:language>
+      </news:publication>
+      <news:publication_date>2026-06-23</news:publication_date>
+      <news:title>米財務省OFAC、プリンスグループに追加制裁35者 — 日本の警察庁との連携を明記、ナンバー2は大阪で逮捕</news:title>
+      <news:keywords>プリンスグループ 制裁, OFAC 2026, 胡暁偉, ピッグブッチャリング, Huione, 太子集団</news:keywords>
     </news:news>
   </url>
   <url>
