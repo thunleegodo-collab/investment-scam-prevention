@@ -9,8 +9,8 @@
     <atom:link href="https://sagihantei.com/feed.xml" rel="self" type="application/rss+xml" />
     <description>2024〜2026年の投資詐欺最新事案・摘発情報・被害統計・法規制を毎月更新。SNS型投資詐欺・暗号資産詐欺・ロマンス詐欺・ポンジスキーム・なりすまし広告の被害事例と対策を網羅。</description>
     <language>ja</language>
-    <lastBuildDate>Sun, 26 Jul 2026 00:00:00 +0900</lastBuildDate>
-    <pubDate>Sun, 26 Jul 2026 00:00:00 +0900</pubDate>
+    <lastBuildDate>Sat, 12 Sep 2026 00:00:00 +0900</lastBuildDate>
+    <pubDate>Sat, 12 Sep 2026 00:00:00 +0900</pubDate>
     <copyright>© 投資詐欺防止相談室（サンリー合同会社）</copyright>
     <category>News</category>
     <category>Crime</category>
@@ -23,6 +23,46 @@
       <height>630</height>
     </image>
     <managingEditor>noreply@sagihantei.com (投資詐欺防止相談室)</managingEditor>
+
+    <item>
+      <title>警察庁 令和8年7月末暫定値 — 7カ月で被害2,108.1億円、SNS型投資詐欺881.2億円で前年同期比88.6%増</title>
+      <link>https://sagihantei.com/news/keisatsucho-2026-07-sokuhou</link>
+      <description><![CDATA[警察庁は2026年9月4日、令和8年1〜7月末の特殊詐欺の認知・検挙状況（暫定値）を公表。認知件数26,051件（前年同期比＋16.6%）、被害額2,108.1億円（同＋42.9%）。SNS型投資詐欺は6,566件・881.2億円（同＋88.6%）で引き続き最悪。5月末からの2カ月でSNS型投資詐欺の被害額は約181億円増加した。]]></description>
+      <pubDate>Sat, 12 Sep 2026 00:00:00 +0900</pubDate>
+      <guid isPermaLink="true">https://sagihantei.com/news/keisatsucho-2026-07-sokuhou</guid>
+      <category>法規制・対策</category>
+      <dc:creator>投資詐欺防止相談室</dc:creator>
+    </item>
+
+    <item>
+      <title>未上場企業への出資名目で1億5,000万円詐取 — 投資会社「プロビズ」代表逮捕、東証プライム上場企業の元取締役という肩書が信用材料に</title>
+      <link>https://sagihantei.com/news/proviz-mikoukaikabu-2026-09</link>
+      <description><![CDATA[愛知県警は2026年9月8日、投資会社「プロビズ」代表・二井矢祥容疑者（39）を詐欺容疑で逮捕。名古屋市の会社役員2人に未上場企業への出資話を持ちかけ計1億5,000万円を詐取した疑い。同容疑者は当時、東証プライム上場の旅行会社の取締役を務めていた。]]></description>
+      <pubDate>Sat, 12 Sep 2026 00:00:00 +0900</pubDate>
+      <guid isPermaLink="true">https://sagihantei.com/news/proviz-mikoukaikabu-2026-09</guid>
+      <category>未公開株・社債詐欺</category>
+      <dc:creator>投資詐欺防止相談室</dc:creator>
+    </item>
+
+    <item>
+      <title>マッチングアプリで男性のLINE ID約5,600人分を収集した詐欺グループ摘発 — 愛知県警、暗号資産詐欺容疑で男5人逮捕</title>
+      <link>https://sagihantei.com/news/aichi-romance-lineid-2026-09</link>
+      <description><![CDATA[愛知県警が「スマホバイト」と称しアルバイト約300人を動員、マッチングアプリで男性利用者からLINE IDを聞き出す手口で約5,600人分を収集していた詐欺グループの男5人を詐欺容疑で逮捕。立件額は15万円相当だが、収集IDが他の詐欺グループへ流通していた可能性がある。]]></description>
+      <pubDate>Sat, 12 Sep 2026 00:00:00 +0900</pubDate>
+      <guid isPermaLink="true">https://sagihantei.com/news/aichi-romance-lineid-2026-09</guid>
+      <category>ロマンス詐欺</category>
+      <dc:creator>投資詐欺防止相談室</dc:creator>
+    </item>
+
+    <item>
+      <title>警察庁など7府省庁、なりすまし広告対策でプラットフォーマー5社に文書要請 — 広告主の本人確認・開示徹底、10月16日までに対応報告を求める</title>
+      <link>https://sagihantei.com/news/narisumashi-koukoku-7fushocho-2026-08</link>
+      <description><![CDATA[警察庁・金融庁・消費者庁・デジタル庁・総務省・法務省・経済産業省の7府省庁が2026年8月7日、Google・LINEヤフー・Meta・TikTok・X Corpの5社になりすまし広告対策の文書要請。広告主の本人確認徹底・情報開示・削除要請への迅速対応を求め、10月16日までの報告を要求。]]></description>
+      <pubDate>Fri, 07 Aug 2026 00:00:00 +0900</pubDate>
+      <guid isPermaLink="true">https://sagihantei.com/news/narisumashi-koukoku-7fushocho-2026-08</guid>
+      <category>法規制・対策</category>
+      <dc:creator>投資詐欺防止相談室</dc:creator>
+    </item>
 
     <item>
       <title>著名人なりすましが継続 — 堀江貴文氏をかたる勧誘で札幌の60代男性が1,270万円、「ひろゆき氏逮捕」の偽日経記事から偽取引サイトへ</title>

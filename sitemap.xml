@@ -21,7 +21,7 @@
   </url>
   <url>
     <loc>https://sagihantei.com/news</loc>
-    <lastmod>2026-08-07</lastmod>
+    <lastmod>2026-09-12</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
     <news:news>
@@ -29,8 +29,68 @@
         <news:name>詐欺判定.com</news:name>
         <news:language>ja</news:language>
       </news:publication>
-      <news:publication_date>2026-07-26</news:publication_date>
+      <news:publication_date>2026-09-12</news:publication_date>
       <news:title>2026年最新の投資詐欺ニュースまとめ</news:title>
+    </news:news>
+  </url>
+  <url>
+    <loc>https://sagihantei.com/news/keisatsucho-2026-07-sokuhou</loc>
+    <lastmod>2026-09-12</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+    <news:news>
+      <news:publication>
+        <news:name>詐欺判定.com</news:name>
+        <news:language>ja</news:language>
+      </news:publication>
+      <news:publication_date>2026-09-12</news:publication_date>
+      <news:title>警察庁 令和8年7月末暫定値 — 7カ月で被害2,108.1億円、SNS型投資詐欺881.2億円で前年同期比88.6%増</news:title>
+      <news:keywords>警察庁 暫定値, 令和8年7月末, SNS型投資詐欺 被害額, 特殊詐欺 統計, 2026</news:keywords>
+    </news:news>
+  </url>
+  <url>
+    <loc>https://sagihantei.com/news/proviz-mikoukaikabu-2026-09</loc>
+    <lastmod>2026-09-12</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+    <news:news>
+      <news:publication>
+        <news:name>詐欺判定.com</news:name>
+        <news:language>ja</news:language>
+      </news:publication>
+      <news:publication_date>2026-09-12</news:publication_date>
+      <news:title>未上場企業への出資名目で1億5,000万円詐取 — 投資会社「プロビズ」代表逮捕</news:title>
+      <news:keywords>プロビズ, 未公開株詐欺, 出資詐欺, 愛知県警, 2026</news:keywords>
+    </news:news>
+  </url>
+  <url>
+    <loc>https://sagihantei.com/news/aichi-romance-lineid-2026-09</loc>
+    <lastmod>2026-09-12</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+    <news:news>
+      <news:publication>
+        <news:name>詐欺判定.com</news:name>
+        <news:language>ja</news:language>
+      </news:publication>
+      <news:publication_date>2026-09-12</news:publication_date>
+      <news:title>マッチングアプリで男性のLINE ID約5,600人分を収集した詐欺グループ摘発 — 愛知県警が男5人逮捕</news:title>
+      <news:keywords>ロマンス詐欺, マッチングアプリ, LINE ID収集, 愛知県警, 2026</news:keywords>
+    </news:news>
+  </url>
+  <url>
+    <loc>https://sagihantei.com/news/narisumashi-koukoku-7fushocho-2026-08</loc>
+    <lastmod>2026-08-07</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+    <news:news>
+      <news:publication>
+        <news:name>詐欺判定.com</news:name>
+        <news:language>ja</news:language>
+      </news:publication>
+      <news:publication_date>2026-08-07</news:publication_date>
+      <news:title>警察庁など7府省庁、なりすまし広告対策でプラットフォーマー5社に文書要請</news:title>
+      <news:keywords>なりすまし広告, 7府省庁, プラットフォーマー, 本人確認, 2026</news:keywords>
     </news:news>
   </url>
   <url>
