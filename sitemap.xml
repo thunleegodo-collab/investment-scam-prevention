@@ -21,7 +21,7 @@
   </url>
   <url>
     <loc>https://sagihantei.com/news</loc>
-    <lastmod>2026-09-12</lastmod>
+    <lastmod>2026-09-20</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
     <news:news>
@@ -29,8 +29,38 @@
         <news:name>詐欺判定.com</news:name>
         <news:language>ja</news:language>
       </news:publication>
-      <news:publication_date>2026-09-12</news:publication_date>
+      <news:publication_date>2026-09-20</news:publication_date>
       <news:title>2026年最新の投資詐欺ニュースまとめ</news:title>
+    </news:news>
+  </url>
+  <url>
+    <loc>https://sagihantei.com/news/hiraki-romance-2026-09</loc>
+    <lastmod>2026-09-20</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+    <news:news>
+      <news:publication>
+        <news:name>詐欺判定.com</news:name>
+        <news:language>ja</news:language>
+      </news:publication>
+      <news:publication_date>2026-09-20</news:publication_date>
+      <news:title>元プロテニス選手を4度目の逮捕 — 「外国人女性の160万ドル報奨金」名目のロマンス詐欺</news:title>
+      <news:keywords>ロマンス詐欺, 平木理化, 口座名義, 国際詐欺, 2026</news:keywords>
+    </news:news>
+  </url>
+  <url>
+    <loc>https://sagihantei.com/news/takamatsu-ukego-2026-09</loc>
+    <lastmod>2026-09-20</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+    <news:news>
+      <news:publication>
+        <news:name>詐欺判定.com</news:name>
+        <news:language>ja</news:language>
+      </news:publication>
+      <news:publication_date>2026-09-20</news:publication_date>
+      <news:title>「出金前に税金必要」の投資詐欺で受け子逮捕 — 高松市の60代女性から現金1,442万円を対面受領</news:title>
+      <news:keywords>投資詐欺, 受け子, 香川県警, 現金手渡し, 2026</news:keywords>
     </news:news>
   </url>
   <url>

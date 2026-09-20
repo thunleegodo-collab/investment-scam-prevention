@@ -9,8 +9,8 @@
     <atom:link href="https://sagihantei.com/feed.xml" rel="self" type="application/rss+xml" />
     <description>2024〜2026年の投資詐欺最新事案・摘発情報・被害統計・法規制を毎月更新。SNS型投資詐欺・暗号資産詐欺・ロマンス詐欺・ポンジスキーム・なりすまし広告の被害事例と対策を網羅。</description>
     <language>ja</language>
-    <lastBuildDate>Sat, 12 Sep 2026 00:00:00 +0900</lastBuildDate>
-    <pubDate>Sat, 12 Sep 2026 00:00:00 +0900</pubDate>
+    <lastBuildDate>Sun, 20 Sep 2026 00:00:00 +0900</lastBuildDate>
+    <pubDate>Sun, 20 Sep 2026 00:00:00 +0900</pubDate>
     <copyright>© 投資詐欺防止相談室（サンリー合同会社）</copyright>
     <category>News</category>
     <category>Crime</category>
@@ -23,6 +23,26 @@
       <height>630</height>
     </image>
     <managingEditor>noreply@sagihantei.com (投資詐欺防止相談室)</managingEditor>
+
+    <item>
+      <title>元プロテニス選手を4度目の逮捕 — 「外国人女性の160万ドル報奨金」名目のロマンス詐欺、口座名義人として容疑を否認</title>
+      <link>https://sagihantei.com/news/hiraki-romance-2026-09</link>
+      <description><![CDATA[千葉県警は2026年9月17日、元プロテニス選手・平木理化容疑者（54）を詐欺容疑で逮捕。逮捕は4回目。1997年全仏オープン混合ダブルス優勝の経歴を持つ。「外国人女性の160万ドル報奨金」名目で高知県宿毛市の男性から95万円を平木容疑者名義の口座に振り込ませた疑い。容疑は否認。]]></description>
+      <pubDate>Sun, 20 Sep 2026 00:00:00 +0900</pubDate>
+      <guid isPermaLink="true">https://sagihantei.com/news/hiraki-romance-2026-09</guid>
+      <category>ロマンス詐欺</category>
+      <dc:creator>投資詐欺防止相談室</dc:creator>
+    </item>
+
+    <item>
+      <title>「出金前に税金必要」の投資詐欺で受け子逮捕 — 高松市の60代女性から現金1,442万円を対面で受領、容疑を認める</title>
+      <link>https://sagihantei.com/news/takamatsu-ukego-2026-09</link>
+      <description><![CDATA[香川県警高松北署は2026年9月15日、投資詐欺の受け子・金扇進一容疑者（56）を逮捕。「出金前に税金が必要」とうそのメッセージを送り、高松市の60代女性から現金1,442万2,702円を対面で受け取った疑い。容疑を認める。振込ではなく現金手渡しでモニタリング回避を狙う手口。]]></description>
+      <pubDate>Sun, 20 Sep 2026 00:00:00 +0900</pubDate>
+      <guid isPermaLink="true">https://sagihantei.com/news/takamatsu-ukego-2026-09</guid>
+      <category>SNS型</category>
+      <dc:creator>投資詐欺防止相談室</dc:creator>
+    </item>
 
     <item>
       <title>警察庁 令和8年7月末暫定値 — 7カ月で被害2,108.1億円、SNS型投資詐欺881.2億円で前年同期比88.6%増</title>
